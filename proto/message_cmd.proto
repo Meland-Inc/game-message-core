@@ -94,7 +94,7 @@ enum EnvelopeType {
     BroadCastSceneDestruction       = 0x030035;
     PlayerActionChat                = 0x030037;
     BroadCastPlayerActionChat       = 0x030039;
-    GetHomeData                     = 0x030041;
+    GetHomeData                     = 0x030041; 
     QueryServerTime                 = 0x030043;       // 客户端请求服务器时间
     BroadCastChangeService          = 0x030045;
 

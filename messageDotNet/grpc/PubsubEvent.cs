@@ -28,7 +28,6 @@ public static class SubscriptionEvent
     /// </summary>
     public const string USER_CHANGE_SERVICE = "EventTopicUserChangeService";
 
-
     /// <summary>
     /// 存储玩家数据
     /// </summary>

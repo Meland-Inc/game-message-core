@@ -24,7 +24,11 @@ namespace GameMessageCore {
     static MessageCmdReflection() {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           string.Concat(
+<<<<<<< HEAD
             "ChFtZXNzYWdlX2NtZC5wcm90bxIPZ2FtZU1lc3NhZ2VDb3JlKvsNCgxFbnZl",
+=======
+            "ChFtZXNzYWdlX2NtZC5wcm90bxIPZ2FtZU1lc3NhZ2VDb3JlKoINCgxFbnZl",
+>>>>>>> 0b59364 (grpc user join new service msg and broad client change service msg)
             "bG9wZVR5cGUSCwoHVW5rbm93bhAAEhYKEEJyb2FkQ2FzdFRpY2tPdXQQmbMC",
             "Eg0KB0l0ZW1HZXQQgYAEEg0KB0l0ZW1Vc2UQg4AEEg4KCEl0ZW1Ecm9wEIWA",
             "BBISCgxVcGRhdGVBdmF0YXIQh4AEEhIKDFVubG9hZEF2YXRhchCJgAQSFgoQ",
@@ -38,6 +42,7 @@ namespace GameMessageCore {
             "YXJnZWQQtYAEEg0KB0hhcnZlc3QQt4AEEhAKCkNvbGxlY3Rpb24QuYAEEhoK",
             "FEJyb2FkQ2FzdE11bHRpVXBMYW5kEMGABBITCg1TZWxmTmZ0QnVpbGRzEMOA",
             "BBIeChhCcm9hZENhc3RTZWxmQnVpbGRVcGRhdGUQxYAEEiEKG0Jyb2FkQ2Fz",
+<<<<<<< HEAD
             "dFNlbGZCdWlsZFJlY3ljbGluZxDHgAQSEQoLTWludEJhdHRlcnkQyYAEEhIK",
             "DFF1ZXJ5R3JhbmFyeRDRgAQSFAoOR3JhbmFyeUNvbGxlY3QQ04AEEhwKFkJy",
             "b2FkQ2FzdEdyYW5hcnlVcGRhdGUQ1YAEEhwKFkJyb2FkQ2FzdFVwR3JhbmFy",
@@ -65,6 +70,33 @@ namespace GameMessageCore {
             "c3NhZ2UQgYAUEhsKFUJyb2FkQ2FzdENoYXRNZXNzYWdlcxCDgBQSIAoaQnJv",
             "YWRDYXN0UmVtb3ZlQ2hhdE1lc3NhZ2UQhIAUEh4KGEJyb2FkQ2FzdFVwZGF0",
             "ZUNoYXRTdGF0ZRCFgBQSCgoEUGluZxCBgBhiBnByb3RvMw=="));
+=======
+            "dFNlbGZCdWlsZFJlY3ljbGluZxDHgAQSEQoLTWludEJhdHRlcnkQyYAEEhEK",
+            "C1F1ZXJ5UGxheWVyEIGACBISCgxDcmVhdGVQbGF5ZXIQg4AIEg4KCEVudGVy",
+            "TWFwEIGADBIYChJVcGRhdGVTZWxmTG9jYXRpb24Qg4AMEg4KCFVzZVNraWxs",
+            "EIWADBITCg1SZXNwYXduUGxheWVyEImADBIdChdCcm9hZENhc3RJbml0TWFw",
+            "RWxlbWVudBCRgAwSHgoYQnJvYWRDYXN0TWFwRW50aXR5VXBkYXRlEJKADBIc",
+            "ChZCcm9hZENhc3RFbnRpdHlEZXN0cm95EJOADBIZChNCcm9hZENhc3RFbnRp",
+            "dHlNb3ZlEJSADBIbChVCcm9hZENhc3RFbnRpdHlDb21iYXQQlYAMEhwKFkJy",
+            "b2FkQ2FzdFJlc3Bhd25QbGF5ZXIQloAMEg4KCFRlbGVwb3J0EJeADBIiChxC",
+            "cm9hZENhc3RFbnRpdHlQcm9maWxlVXBkYXRlEJmADBIbChVCcm9hZENhc3RN",
+            "b25zdGVyRGVhdGgQoYAMEiEKG0Jyb2FkQ2FzdEVudGl0eUF2YXRhclVwZGF0",
+            "ZRCigAwSJQofQnJvYWRDYXN0RW50aXR5QmF0dGxlRGF0YVVwZGF0ZRCjgAwS",
+            "JAoeQnJvYWRDYXN0RW50aXR5QnVpbGREYXRhVXBkYXRlEKWADBIZChNQbGF5",
+            "ZXJBY3Rpb25Db2xsZWN0EKeADBIiChxCcm9hZENhc3RQbGF5ZXJBY3Rpb25D",
+            "b2xsZWN0EKmADBIWChBTY2VuZURlc3RydWN0aW9uELOADBIfChlCcm9hZENh",
+            "c3RTY2VuZURlc3RydWN0aW9uELWADBIWChBQbGF5ZXJBY3Rpb25DaGF0ELeA",
+            "DBIfChlCcm9hZENhc3RQbGF5ZXJBY3Rpb25DaGF0ELmADBIVCg9RdWVyeVNl",
+            "cnZlclRpbWUQw4AMEhwKFkJyb2FkQ2FzdENoYW5nZVNlcnZpY2UQxYAMEg8K",
+            "CVNlbGZUYXNrcxCBgBASHQoXQnJvYWRDYXN0VXBkYXRlVGFza0xpc3QQg4AQ",
+            "EhAKCkFjY2VwdFRhc2sQhYAQEhUKD0FiYW5kb25tZW50VGFzaxCHgBASEAoK",
+            "VGFza1Jld2FyZBCJgBASFAoOVGFza0xpc3RSZXdhcmQQkYAQEhkKE1VwZ3Jh",
+            "ZGVUYXNrUHJvZ3Jlc3MQk4AQEhkKE0Jyb2FkQ2FzdFRhc2tSZXdhcmQQlYAQ",
+            "EhUKD1NlbmRDaGF0TWVzc2FnZRCBgBQSGwoVQnJvYWRDYXN0Q2hhdE1lc3Nh",
+            "Z2VzEIOAFBIgChpCcm9hZENhc3RSZW1vdmVDaGF0TWVzc2FnZRCEgBQSHgoY",
+            "QnJvYWRDYXN0VXBkYXRlQ2hhdFN0YXRlEIWAFBIKCgRQaW5nEIGAGGIGcHJv",
+            "dG8z"));
+>>>>>>> 0b59364 (grpc user join new service msg and broad client change service msg)
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
           new pbr::GeneratedClrTypeInfo(new[] {typeof(global::GameMessageCore.EnvelopeType), }, null, null));
