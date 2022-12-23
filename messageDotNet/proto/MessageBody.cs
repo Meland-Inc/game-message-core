@@ -29,11 +29,7 @@ namespace GameMessageCore {
             "LnByb3RvGgppdGVtLnByb3RvGg9pdGVtX3Nsb3QucHJvdG8aDGVudGl0eS5w",
             "cm90bxoTZW50aXR5UHJvZmlsZS5wcm90bxoLc2tpbGwucHJvdG8aCnRhc2su",
             "cHJvdG8aCmNoYXQucHJvdG8aDHZlY3Rvci5wcm90bxoKbGFuZC5wcm90bxoN",
-<<<<<<< HEAD
             "c2VydmljZS5wcm90byLARwoIRW52ZWxvcGUSKwoEdHlwZRgBIAEoDjIdLmdh",
-=======
-            "c2VydmljZS5wcm90byK7QgoIRW52ZWxvcGUSKwoEdHlwZRgBIAEoDjIdLmdh",
->>>>>>> 0b59364 (grpc user join new service msg and broad client change service msg)
             "bWVNZXNzYWdlQ29yZS5FbnZlbG9wZVR5cGUSDgoGc2VxX2lkGAIgASgFEhIK",
             "CmVycm9yX2NvZGUYAyABKAUSFQoNZXJyb3JfbWVzc2FnZRgEIAEoCRJTChxi",
             "cm9hZF9jYXN0X3RpY2tfb3V0X3Jlc3BvbnNlGJmzAiABKAsyKS5nYW1lTWVz",
@@ -113,7 +109,6 @@ namespace GameMessageCore {
             "dF9iYXR0ZXJ5X3JlcXVlc3QYyYAEIAEoCzIjLmdhbWVNZXNzYWdlQ29yZS5N",
             "aW50QmF0dGVyeVJlcXVlc3RIABJHChVtaW50X2JhdHRlcnlfcmVzcG9uc2UY",
             "0IAEIAEoCzIkLmdhbWVNZXNzYWdlQ29yZS5NaW50QmF0dGVyeVJlc3BvbnNl",
-<<<<<<< HEAD
             "SAASRwoVcXVlcnlfZ3JhbmFyeV9yZXF1ZXN0GNGABCABKAsyJC5nYW1lTWVz",
             "c2FnZUNvcmUuUXVlcnlHcmFuYXJ5UmVxdWVzdEgAEkkKFnF1ZXJ5X2dyYW5h",
             "cnlfcmVzcG9uc2UY0oAEIAEoCzIlLmdhbWVNZXNzYWdlQ29yZS5RdWVyeUdy",
@@ -435,303 +430,6 @@ namespace GameMessageCore {
           new pbr::FileDescriptor[] { global::GameMessageCore.MessageCmdReflection.Descriptor, global::GameMessageCore.PlayerReflection.Descriptor, global::GameMessageCore.OsReflection.Descriptor, global::GameMessageCore.PlatformReflection.Descriptor, global::GameMessageCore.ItemReflection.Descriptor, global::GameMessageCore.ItemSlotReflection.Descriptor, global::GameMessageCore.EntityReflection.Descriptor, global::GameMessageCore.EntityProfileReflection.Descriptor, global::GameMessageCore.SkillReflection.Descriptor, global::GameMessageCore.TaskReflection.Descriptor, global::GameMessageCore.ChatReflection.Descriptor, global::GameMessageCore.VectorReflection.Descriptor, global::GameMessageCore.LandReflection.Descriptor, global::GameMessageCore.ServiceReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
             new pbr::GeneratedClrTypeInfo(typeof(global::GameMessageCore.Envelope), global::GameMessageCore.Envelope.Parser, new[]{ "Type", "SeqId", "ErrorCode", "ErrorMessage", "BroadCastTickOutResponse", "ItemGetRequest", "ItemGetResponse", "ItemUseRequest", "ItemUseResponse", "ItemDropRequest", "ItemDropResponse", "UpdateAvatarRequest", "UpdateAvatarResponse", "UnloadAvatarRequest", "UnloadAvatarResponse", "BroadCastItemAddResponse", "BroadCastItemUpdateResponse", "BroadCastItemDelResponse", "BroadCastUpdateItemSlotResponse", "GetItemSlotRequest", "GetItemSlotResponse", "UpgradeItemSlotRequest", "UpgradeItemSlotResponse", "SigninPlayerRequest", "SigninPlayerResponse", "SignOutPlayerRequest", "SignOutPlayerResponse", "UpgradePlayerLevelRequest", "UpgradePlayerLevelResponse", "QueryLandsRequest", "QueryLandsResponse", "BroadCastInitLandResponse", "BroadCastInitItemResponse", "BuildRequest", "BuildResponse", "RecyclingRequest", "RecyclingResponse", "ChargedRequest", "ChargedResponse", "HarvestRequest", "HarvestResponse", "CollectionRequest", "CollectionResponse", "BroadCastMultiUpLandResponse", "SelfNftBuildsRequest", "SelfNftBuildsResponse", "BroadCastSelfBuildUpdateResponse", "BroadCastSelfBuildRecyclingResponse", "MintBatteryRequest", "MintBatteryResponse", "QueryGranaryRequest", "QueryGranaryResponse", "GranaryCollectRequest", "GranaryCollectResponse", "BroadCastGranaryUpdateResponse", "BroadCastUpGranaryItemResponse", "QueryPlayerRequest", "QueryPlayerResponse", "CreatePlayerRequest", "CreatePlayerResponse", "EnterMapRequest", "EnterMapResponse", "UpdateSelfLocationRequest", "UpdateSelfLocationResponse", "UseSkillRequest", "UseSkillResponse", "RespawnPlayerRequest", "RespawnPlayerResponse", "BroadCastInitMapElementResponse", "BroadCastMapEntityUpdateResponse", "BroadCastEntityDestroyResponse", "BroadCastEntityMoveResponse", "BroadCastEntityCombatResponse", "BroadCastRespawnPlayerResponse", "TeleportRequest", "TeleportResponse", "BroadCastEntityProfileUpdateResponse", "BroadCastMonsterDeathResponse", "BroadCastEntityAvatarUpdateResponse", "BroadCastEntityBattleDataUpdateResponse", "BroadCastEntityBuildDataUpdateResponse", "PlayerActionCollectRequest", "PlayerActionCollectResponse", "BroadCastPlayerActionCollectResponse", "SceneDestructionRequest", "SceneDestructionResponse", "BroadCastSceneDestructionResponse", "PlayerActionChatRequest", "PlayerActionChatResponse", "BroadCastPlayerActionChatResponse", "GetHomeDataRequest", "GetHomeDataResponse", "QueryServerTimeRequest", "QueryServerTimeResponse", "BroadCastChangeServiceResponse", "SelfTasksRequest", "SelfTasksResponse", "BroadCastUpdateTaskListResponse", "AcceptTaskRequest", "AcceptTaskResponse", "AbandonmentTaskRequest", "AbandonmentTaskResponse", "TaskRewardRequest", "TaskRewardResponse", "TaskListRewardRequest", "TaskListRewardResponse", "UpgradeTaskProgressRequest", "UpgradeTaskProgressResponse", "BroadCastTaskRewardResponse", "SendChatMessageRequest", "SendChatMessageResponse", "BroadCastChatMessagesResponse", "BroadCastRemoveChatMessageResponse", "BroadCastUpdateChatStateResponse", "PingRequest", "PingResponse" }, new[]{ "Payload" }, null, null, null),
-=======
-            "SAASRQoUcXVlcnlfcGxheWVyX3JlcXVlc3QYgYAIIAEoCzIjLmdhbWVNZXNz",
-            "YWdlQ29yZS5RdWVyeVBsYXllclJlcXVlc3RIABJHChVxdWVyeV9wbGF5ZXJf",
-            "cmVzcG9uc2UYgoAIIAEoCzIkLmdhbWVNZXNzYWdlQ29yZS5RdWVyeVBsYXll",
-            "clJlc3BvbnNlSAASRwoVY3JlYXRlX3BsYXllcl9yZXF1ZXN0GIOACCABKAsy",
-            "JC5nYW1lTWVzc2FnZUNvcmUuQ3JlYXRlUGxheWVyUmVxdWVzdEgAEkkKFmNy",
-            "ZWF0ZV9wbGF5ZXJfcmVzcG9uc2UYhIAIIAEoCzIlLmdhbWVNZXNzYWdlQ29y",
-            "ZS5DcmVhdGVQbGF5ZXJSZXNwb25zZUgAEj8KEWVudGVyX21hcF9yZXF1ZXN0",
-            "GIGADCABKAsyIC5nYW1lTWVzc2FnZUNvcmUuRW50ZXJNYXBSZXF1ZXN0SAAS",
-            "QQoSZW50ZXJfbWFwX3Jlc3BvbnNlGIKADCABKAsyIS5nYW1lTWVzc2FnZUNv",
-            "cmUuRW50ZXJNYXBSZXNwb25zZUgAElQKHHVwZGF0ZV9zZWxmX2xvY2F0aW9u",
-            "X3JlcXVlc3QYg4AMIAEoCzIqLmdhbWVNZXNzYWdlQ29yZS5VcGRhdGVTZWxm",
-            "TG9jYXRpb25SZXF1ZXN0SAASVgoddXBkYXRlX3NlbGZfbG9jYXRpb25fcmVz",
-            "cG9uc2UYhIAMIAEoCzIrLmdhbWVNZXNzYWdlQ29yZS5VcGRhdGVTZWxmTG9j",
-            "YXRpb25SZXNwb25zZUgAEj8KEXVzZV9za2lsbF9yZXF1ZXN0GIWADCABKAsy",
-            "IC5nYW1lTWVzc2FnZUNvcmUuVXNlU2tpbGxSZXF1ZXN0SAASQQoSdXNlX3Nr",
-            "aWxsX3Jlc3BvbnNlGIaADCABKAsyIS5nYW1lTWVzc2FnZUNvcmUuVXNlU2tp",
-            "bGxSZXNwb25zZUgAEkkKFnJlc3Bhd25fcGxheWVyX3JlcXVlc3QYiYAMIAEo",
-            "CzIlLmdhbWVNZXNzYWdlQ29yZS5SZXNwYXduUGxheWVyUmVxdWVzdEgAEksK",
-            "F3Jlc3Bhd25fcGxheWVyX3Jlc3BvbnNlGJCADCABKAsyJi5nYW1lTWVzc2Fn",
-            "ZUNvcmUuUmVzcGF3blBsYXllclJlc3BvbnNlSAASYgokYnJvYWRfY2FzdF9p",
-            "bml0X21hcF9lbGVtZW50X3Jlc3BvbnNlGJGADCABKAsyMC5nYW1lTWVzc2Fn",
-            "ZUNvcmUuQnJvYWRDYXN0SW5pdE1hcEVsZW1lbnRSZXNwb25zZUgAEmQKJWJy",
-            "b2FkX2Nhc3RfbWFwX2VudGl0eV91cGRhdGVfcmVzcG9uc2UYkoAMIAEoCzIx",
-            "LmdhbWVNZXNzYWdlQ29yZS5Ccm9hZENhc3RNYXBFbnRpdHlVcGRhdGVSZXNw",
-            "b25zZUgAEl8KImJyb2FkX2Nhc3RfZW50aXR5X2Rlc3Ryb3lfcmVzcG9uc2UY",
-            "k4AMIAEoCzIvLmdhbWVNZXNzYWdlQ29yZS5Ccm9hZENhc3RFbnRpdHlEZXN0",
-            "cm95UmVzcG9uc2VIABJZCh9icm9hZF9jYXN0X2VudGl0eV9tb3ZlX3Jlc3Bv",
-            "bnNlGJSADCABKAsyLC5nYW1lTWVzc2FnZUNvcmUuQnJvYWRDYXN0RW50aXR5",
-            "TW92ZVJlc3BvbnNlSAASXQohYnJvYWRfY2FzdF9lbnRpdHlfY29tYmF0X3Jl",
-            "c3BvbnNlGJWADCABKAsyLi5nYW1lTWVzc2FnZUNvcmUuQnJvYWRDYXN0RW50",
-            "aXR5Q29tYmF0UmVzcG9uc2VIABJfCiJicm9hZF9jYXN0X3Jlc3Bhd25fcGxh",
-            "eWVyX3Jlc3BvbnNlGJaADCABKAsyLy5nYW1lTWVzc2FnZUNvcmUuQnJvYWRD",
-            "YXN0UmVzcGF3blBsYXllclJlc3BvbnNlSAASPgoQdGVsZXBvcnRfcmVxdWVz",
-            "dBiXgAwgASgLMiAuZ2FtZU1lc3NhZ2VDb3JlLlRlbGVwb3J0UmVxdWVzdEgA",
-            "EkAKEXRlbGVwb3J0X3Jlc3BvbnNlGJiADCABKAsyIS5nYW1lTWVzc2FnZUNv",
-            "cmUuVGVsZXBvcnRSZXNwb25zZUgAEmwKKWJyb2FkX2Nhc3RfZW50aXR5X3By",
-            "b2ZpbGVfdXBkYXRlX3Jlc3BvbnNlGJmADCABKAsyNS5nYW1lTWVzc2FnZUNv",
-            "cmUuQnJvYWRDYXN0RW50aXR5UHJvZmlsZVVwZGF0ZVJlc3BvbnNlSAASXQoh",
-            "YnJvYWRfY2FzdF9tb25zdGVyX2RlYXRoX3Jlc3BvbnNlGKGADCABKAsyLi5n",
-            "YW1lTWVzc2FnZUNvcmUuQnJvYWRDYXN0TW9uc3RlckRlYXRoUmVzcG9uc2VI",
-            "ABJqCihicm9hZF9jYXN0X2VudGl0eV9hdmF0YXJfdXBkYXRlX3Jlc3BvbnNl",
-            "GKKADCABKAsyNC5nYW1lTWVzc2FnZUNvcmUuQnJvYWRDYXN0RW50aXR5QXZh",
-            "dGFyVXBkYXRlUmVzcG9uc2VIABJzCi1icm9hZF9jYXN0X2VudGl0eV9iYXR0",
-            "bGVfZGF0YV91cGRhdGVfcmVzcG9uc2UYo4AMIAEoCzI4LmdhbWVNZXNzYWdl",
-            "Q29yZS5Ccm9hZENhc3RFbnRpdHlCYXR0bGVEYXRhVXBkYXRlUmVzcG9uc2VI",
-            "ABJxCixicm9hZF9jYXN0X2VudGl0eV9idWlsZF9kYXRhX3VwZGF0ZV9yZXNw",
-            "b25zZRilgAwgASgLMjcuZ2FtZU1lc3NhZ2VDb3JlLkJyb2FkQ2FzdEVudGl0",
-            "eUJ1aWxkRGF0YVVwZGF0ZVJlc3BvbnNlSAASVgodcGxheWVyX2FjdGlvbl9j",
-            "b2xsZWN0X3JlcXVlc3QYp4AMIAEoCzIrLmdhbWVNZXNzYWdlQ29yZS5QbGF5",
-            "ZXJBY3Rpb25Db2xsZWN0UmVxdWVzdEgAElgKHnBsYXllcl9hY3Rpb25fY29s",
-            "bGVjdF9yZXNwb25zZRipgAwgASgLMiwuZ2FtZU1lc3NhZ2VDb3JlLlBsYXll",
-            "ckFjdGlvbkNvbGxlY3RSZXNwb25zZUgAEmwKKWJyb2FkX2Nhc3RfcGxheWVy",
-            "X2FjdGlvbl9jb2xsZWN0X3Jlc3BvbnNlGLGADCABKAsyNS5nYW1lTWVzc2Fn",
-            "ZUNvcmUuQnJvYWRDYXN0UGxheWVyQWN0aW9uQ29sbGVjdFJlc3BvbnNlSAAS",
-            "TwoZc2NlbmVfZGVzdHJ1Y3Rpb25fcmVxdWVzdBizgAwgASgLMiguZ2FtZU1l",
-            "c3NhZ2VDb3JlLlNjZW5lRGVzdHJ1Y3Rpb25SZXF1ZXN0SAASUQoac2NlbmVf",
-            "ZGVzdHJ1Y3Rpb25fcmVzcG9uc2UYtIAMIAEoCzIpLmdhbWVNZXNzYWdlQ29y",
-            "ZS5TY2VuZURlc3RydWN0aW9uUmVzcG9uc2VIABJlCiVicm9hZF9jYXN0X3Nj",
-            "ZW5lX2Rlc3RydWN0aW9uX3Jlc3BvbnNlGLWADCABKAsyMi5nYW1lTWVzc2Fn",
-            "ZUNvcmUuQnJvYWRDYXN0U2NlbmVEZXN0cnVjdGlvblJlc3BvbnNlSAASUAoa",
-            "cGxheWVyX2FjdGlvbl9jaGF0X3JlcXVlc3QYt4AMIAEoCzIoLmdhbWVNZXNz",
-            "YWdlQ29yZS5QbGF5ZXJBY3Rpb25DaGF0UmVxdWVzdEgAElIKG3BsYXllcl9h",
-            "Y3Rpb25fY2hhdF9yZXNwb25zZRi5gAwgASgLMikuZ2FtZU1lc3NhZ2VDb3Jl",
-            "LlBsYXllckFjdGlvbkNoYXRSZXNwb25zZUgAEmYKJmJyb2FkX2Nhc3RfcGxh",
-            "eWVyX2FjdGlvbl9jaGF0X3Jlc3BvbnNlGMGADCABKAsyMi5nYW1lTWVzc2Fn",
-            "ZUNvcmUuQnJvYWRDYXN0UGxheWVyQWN0aW9uQ2hhdFJlc3BvbnNlSAASTgoZ",
-            "cXVlcnlfU2VydmVyX3RpbWVfcmVxdWVzdBjDgAwgASgLMicuZ2FtZU1lc3Nh",
-            "Z2VDb3JlLlF1ZXJ5U2VydmVyVGltZVJlcXVlc3RIABJQChpxdWVyeV9TZXJ2",
-            "ZXJfdGltZV9yZXNwb25zZRjEgAwgASgLMiguZ2FtZU1lc3NhZ2VDb3JlLlF1",
-            "ZXJ5U2VydmVyVGltZVJlc3BvbnNlSAASXwoiYnJvYWRfY2FzdF9jaGFuZ2Vf",
-            "c2VydmljZV9yZXNwb25zZRjFgAwgASgLMi8uZ2FtZU1lc3NhZ2VDb3JlLkJy",
-            "b2FkQ2FzdENoYW5nZVNlcnZpY2VSZXNwb25zZUgAEkEKEnNlbGZfdGFza3Nf",
-            "cmVxdWVzdBiBgBAgASgLMiEuZ2FtZU1lc3NhZ2VDb3JlLlNlbGZUYXNrc1Jl",
-            "cXVlc3RIABJDChNzZWxmX3Rhc2tzX3Jlc3BvbnNlGIKAECABKAsyIi5nYW1l",
-            "TWVzc2FnZUNvcmUuU2VsZlRhc2tzUmVzcG9uc2VIABJiCiRicm9hZF9jYXN0",
-            "X3VwZGF0ZV90YXNrX2xpc3RfcmVzcG9uc2UYg4AQIAEoCzIwLmdhbWVNZXNz",
-            "YWdlQ29yZS5Ccm9hZENhc3RVcGRhdGVUYXNrTGlzdFJlc3BvbnNlSAASQwoT",
-            "YWNjZXB0X3Rhc2tfcmVxdWVzdBiEgBAgASgLMiIuZ2FtZU1lc3NhZ2VDb3Jl",
-            "LkFjY2VwdFRhc2tSZXF1ZXN0SAASRQoUYWNjZXB0X3Rhc2tfcmVzcG9uc2UY",
-            "hYAQIAEoCzIjLmdhbWVNZXNzYWdlQ29yZS5BY2NlcHRUYXNrUmVzcG9uc2VI",
-            "ABJNChhhYmFuZG9ubWVudF90YXNrX3JlcXVlc3QYhoAQIAEoCzInLmdhbWVN",
-            "ZXNzYWdlQ29yZS5BYmFuZG9ubWVudFRhc2tSZXF1ZXN0SAASTwoZYWJhbmRv",
-            "bm1lbnRfdGFza19yZXNwb25zZRiHgBAgASgLMiguZ2FtZU1lc3NhZ2VDb3Jl",
-            "LkFiYW5kb25tZW50VGFza1Jlc3BvbnNlSAASQwoTdGFza19yZXdhcmRfcmVx",
-            "dWVzdBiIgBAgASgLMiIuZ2FtZU1lc3NhZ2VDb3JlLlRhc2tSZXdhcmRSZXF1",
-            "ZXN0SAASRQoUdGFza19yZXdhcmRfcmVzcG9uc2UYiYAQIAEoCzIjLmdhbWVN",
-            "ZXNzYWdlQ29yZS5UYXNrUmV3YXJkUmVzcG9uc2VIABJMChh0YXNrX2xpc3Rf",
-            "cmV3YXJkX3JlcXVlc3QYkIAQIAEoCzImLmdhbWVNZXNzYWdlQ29yZS5UYXNr",
-            "TGlzdFJld2FyZFJlcXVlc3RIABJOChl0YXNrX2xpc3RfcmV3YXJkX3Jlc3Bv",
-            "bnNlGJGAECABKAsyJy5nYW1lTWVzc2FnZUNvcmUuVGFza0xpc3RSZXdhcmRS",
-            "ZXNwb25zZUgAElYKHXVwZ3JhZGVfdGFza19wcm9ncmVzc19yZXF1ZXN0GJKA",
-            "ECABKAsyKy5nYW1lTWVzc2FnZUNvcmUuVXBncmFkZVRhc2tQcm9ncmVzc1Jl",
-            "cXVlc3RIABJYCh51cGdyYWRlX3Rhc2tfcHJvZ3Jlc3NfcmVzcG9uc2UYk4AQ",
-            "IAEoCzIsLmdhbWVNZXNzYWdlQ29yZS5VcGdyYWRlVGFza1Byb2dyZXNzUmVz",
-            "cG9uc2VIABJZCh9icm9hZF9jYXN0X3Rhc2tfcmV3YXJkX3Jlc3BvbnNlGJSA",
-            "ECABKAsyLC5nYW1lTWVzc2FnZUNvcmUuQnJvYWRDYXN0VGFza1Jld2FyZFJl",
-            "c3BvbnNlSAASTwoZc2VuZF9jaGF0X21lc3NhZ2VfcmVxdWVzdBiBgMQCIAEo",
-            "CzInLmdhbWVNZXNzYWdlQ29yZS5TZW5kQ2hhdE1lc3NhZ2VSZXF1ZXN0SAAS",
-            "UQoac2VuZF9jaGF0X21lc3NhZ2VfcmVzcG9uc2UYgoDEAiABKAsyKC5nYW1l",
-            "TWVzc2FnZUNvcmUuU2VuZENoYXRNZXNzYWdlUmVzcG9uc2VIABJeCiFicm9h",
-            "ZF9jYXN0X2NoYXRfbWVzc2FnZXNfcmVzcG9uc2UYg4DEAiABKAsyLi5nYW1l",
-            "TWVzc2FnZUNvcmUuQnJvYWRDYXN0Q2hhdE1lc3NhZ2VzUmVzcG9uc2VIABJp",
-            "Cidicm9hZF9jYXN0X3JlbW92ZV9jaGF0X21lc3NhZ2VfcmVzcG9uc2UYhIDE",
-            "AiABKAsyMy5nYW1lTWVzc2FnZUNvcmUuQnJvYWRDYXN0UmVtb3ZlQ2hhdE1l",
-            "c3NhZ2VSZXNwb25zZUgAEmUKJWJyb2FkX2Nhc3RfdXBkYXRlX2NoYXRfc3Rh",
-            "dGVfcmVzcG9uc2UYhYDEAiABKAsyMS5nYW1lTWVzc2FnZUNvcmUuQnJvYWRD",
-            "YXN0VXBkYXRlQ2hhdFN0YXRlUmVzcG9uc2VIABI2CgxwaW5nX3JlcXVlc3QY",
-            "gYAYIAEoCzIcLmdhbWVNZXNzYWdlQ29yZS5QaW5nUmVxdWVzdEgAEjgKDXBp",
-            "bmdfcmVzcG9uc2UYgoAYIAEoCzIdLmdhbWVNZXNzYWdlQ29yZS5QaW5nUmVz",
-            "cG9uc2VIAEIJCgdwYXlsb2FkIkYKGEJyb2FkQ2FzdFRpY2tPdXRSZXNwb25z",
-            "ZRIqCgRraW5kGAEgASgOMhwuZ2FtZU1lc3NhZ2VDb3JlLlRpY2tPdXRUeXBl",
-            "IhAKDkl0ZW1HZXRSZXF1ZXN0IhEKD0l0ZW1HZXRSZXNwb25zZSJBChlCcm9h",
-            "ZENhc3RJbml0SXRlbVJlc3BvbnNlEiQKBWl0ZW1zGAEgAygLMhUuZ2FtZU1l",
-            "c3NhZ2VDb3JlLkl0ZW0iLgoOSXRlbVVzZVJlcXVlc3QSDgoGaXRlbUlkGAEg",
-            "ASgJEgwKBGFyZ3MYAiABKAkiEQoPSXRlbVVzZVJlc3BvbnNlIi8KD0l0ZW1E",
-            "cm9wUmVxdWVzdBIPCgdpdGVtX2lkGAEgASgJEgsKA251bRgCIAEoBSISChBJ",
-            "dGVtRHJvcFJlc3BvbnNlIjsKE1VwZGF0ZUF2YXRhclJlcXVlc3QSDgoGaXRl",
-            "bUlkGAEgASgJEhQKDGlzQXBwZWFyYW5jZRgCIAEoCCIWChRVcGRhdGVBdmF0",
-            "YXJSZXNwb25zZSImChNVbmxvYWRBdmF0YXJSZXF1ZXN0Eg8KB2l0ZW1faWQY",
-            "ASABKAkiFgoUVW5sb2FkQXZhdGFyUmVzcG9uc2UiQAoYQnJvYWRDYXN0SXRl",
-            "bUFkZFJlc3BvbnNlEiQKBWl0ZW1zGAEgAygLMhUuZ2FtZU1lc3NhZ2VDb3Jl",
-            "Lkl0ZW0iQwobQnJvYWRDYXN0SXRlbVVwZGF0ZVJlc3BvbnNlEiQKBWl0ZW1z",
-            "GAEgAygLMhUuZ2FtZU1lc3NhZ2VDb3JlLkl0ZW0iQAoYQnJvYWRDYXN0SXRl",
-            "bURlbFJlc3BvbnNlEiQKBWl0ZW1zGAEgAygLMhUuZ2FtZU1lc3NhZ2VDb3Jl",
-            "Lkl0ZW0iSwofQnJvYWRDYXN0VXBkYXRlSXRlbVNsb3RSZXNwb25zZRIoCgVz",
-            "bG90cxgBIAMoCzIZLmdhbWVNZXNzYWdlQ29yZS5JdGVtU2xvdCIUChJHZXRJ",
-            "dGVtU2xvdFJlcXVlc3QiPwoTR2V0SXRlbVNsb3RSZXNwb25zZRIoCgVzbG90",
-            "cxgBIAMoCzIZLmdhbWVNZXNzYWdlQ29yZS5JdGVtU2xvdCJLChZVcGdyYWRl",
-            "SXRlbVNsb3RSZXF1ZXN0EjEKCHBvc2l0aW9uGAEgASgOMh8uZ2FtZU1lc3Nh",
-            "Z2VDb3JlLkF2YXRhclBvc2l0aW9uIkMKF1VwZ3JhZGVJdGVtU2xvdFJlc3Bv",
-            "bnNlEigKBXNsb3RzGAEgAygLMhkuZ2FtZU1lc3NhZ2VDb3JlLkl0ZW1TbG90",
-            "ItYBChNTaWduaW5QbGF5ZXJSZXF1ZXN0Eg8KB3VzZXJfaWQYASABKAMSDQoF",
-            "dG9rZW4YAiABKAkSEwoLY2xpZW50X3RpbWUYAyABKAMSEQoJcmVjb25uZWN0",
-            "GAQgASgIEigKB29zX3R5cGUYBSABKA4yFy5nYW1lTWVzc2FnZUNvcmUuT1NU",
-            "eXBlEi8KCHBsYXRmb3JtGAYgASgOMh0uZ2FtZU1lc3NhZ2VDb3JlLlBsYXRm",
-            "b3JtVHlwZRIcChRzY2VuZV9zZXJ2aWNlX2FwcF9pZBgHIAEoCSKgAQoUU2ln",
-            "bmluUGxheWVyUmVzcG9uc2USJwoGcGxheWVyGAEgASgLMhcuZ2FtZU1lc3Nh",
-            "Z2VDb3JlLlBsYXllchITCgtzZXJ2ZXJfdGltZRgCIAEoAxITCgtjbGllbnRf",
-            "dGltZRgDIAEoAxIcChRzY2VuZV9zZXJ2aWNlX2FwcF9pZBgEIAEoCRIXCg9s",
-            "YXN0X2xvZ2luX3RpbWUYBSABKAMiFgoUU2lnbk91dFBsYXllclJlcXVlc3Qi",
-            "FwoVU2lnbk91dFBsYXllclJlc3BvbnNlIowBCiRCcm9hZENhc3RFbnRpdHlQ",
-            "cm9maWxlVXBkYXRlUmVzcG9uc2USLAoJZW50aXR5X2lkGAEgASgLMhkuZ2Ft",
-            "ZU1lc3NhZ2VDb3JlLkVudGl0eUlkEjYKCHByb2ZpbGVzGAIgAygLMiQuZ2Ft",
-            "ZU1lc3NhZ2VDb3JlLkVudGl0eVByb2ZpbGVVcGRhdGUivAEKHUJyb2FkQ2Fz",
-            "dE1vbnN0ZXJEZWF0aFJlc3BvbnNlEg4KBm1hcF9pZBgBIAEoBRIRCglraWxs",
-            "ZXJfaWQYAiABKAMSEgoKbW9uc3Rlcl9pZBgDIAEoAxILCgNjaWQYBCABKAUS",
-            "JQoDcG9zGAUgASgLMhguZ2FtZU1lc3NhZ2VDb3JlLlZlY3RvcjMSMAoJZHJv",
-            "cF9saXN0GAYgAygLMh0uZ2FtZU1lc3NhZ2VDb3JlLkl0ZW1CYXNlSW5mbyJr",
-            "CidCcm9hZENhc3RFbnRpdHlCYXR0bGVEYXRhVXBkYXRlUmVzcG9uc2USLAoJ",
-            "ZW50aXR5X2lkGAEgASgLMhkuZ2FtZU1lc3NhZ2VDb3JlLkVudGl0eUlkEhIK",
-            "CmlzSW5CYXR0bGUYAiABKAgiGwoZVXBncmFkZVBsYXllckxldmVsUmVxdWVz",
-            "dCJAChpVcGdyYWRlUGxheWVyTGV2ZWxSZXNwb25zZRIRCgljdXJfbGV2ZWwY",
-            "ASABKAUSDwoHY3VyX2V4cBgCIAEoAyITChFRdWVyeUxhbmRzUmVxdWVzdCIU",
-            "ChJRdWVyeUxhbmRzUmVzcG9uc2UiRQoZQnJvYWRDYXN0SW5pdExhbmRSZXNw",
-            "b25zZRIoCgVsYW5kcxgBIAMoCzIZLmdhbWVNZXNzYWdlQ29yZS5MYW5kRGF0",
-            "YSJaCgxCdWlsZFJlcXVlc3QSDQoFbmZ0SWQYASABKAkSKgoIcG9zaXRpb24Y",
-            "AiABKAsyGC5nYW1lTWVzc2FnZUNvcmUuVmVjdG9yMxIPCgdsYW5kSWRzGAMg",
-            "AygFIjkKDUJ1aWxkUmVzcG9uc2USKAoFYnVpbGQYASABKAsyGS5nYW1lTWVz",
-            "c2FnZUNvcmUuTmZ0QnVpbGQiMgoQUmVjeWNsaW5nUmVxdWVzdBIPCgdidWls",
-            "ZElkGAEgASgDEg0KBW5mdElkGAIgASgJIhMKEVJlY3ljbGluZ1Jlc3BvbnNl",
-            "Ij0KDkNoYXJnZWRSZXF1ZXN0Eg8KB2J1aWxkSWQYASABKAMSDQoFbmZ0SWQY",
-            "AiABKAkSCwoDbnVtGAMgASgFIhEKD0NoYXJnZWRSZXNwb25zZSIwCg5IYXJ2",
-            "ZXN0UmVxdWVzdBIPCgdidWlsZElkGAEgASgDEg0KBW5mdElkGAIgASgJIhEK",
-            "D0hhcnZlc3RSZXNwb25zZSIzChFDb2xsZWN0aW9uUmVxdWVzdBIPCgdidWls",
-            "ZElkGAEgASgDEg0KBW5mdElkGAIgASgJIhQKEkNvbGxlY3Rpb25SZXNwb25z",
-            "ZSJIChxCcm9hZENhc3RNdWx0aVVwTGFuZFJlc3BvbnNlEigKBWxhbmRzGAEg",
-            "AygLMhkuZ2FtZU1lc3NhZ2VDb3JlLkxhbmREYXRhIhYKFFNlbGZOZnRCdWls",
-            "ZHNSZXF1ZXN0IkIKFVNlbGZOZnRCdWlsZHNSZXNwb25zZRIpCgZidWlsZHMY",
-            "ASADKAsyGS5nYW1lTWVzc2FnZUNvcmUuTmZ0QnVpbGQiTAogQnJvYWRDYXN0",
-            "U2VsZkJ1aWxkVXBkYXRlUmVzcG9uc2USKAoFYnVpbGQYASABKAsyGS5nYW1l",
-            "TWVzc2FnZUNvcmUuTmZ0QnVpbGQiVgojQnJvYWRDYXN0U2VsZkJ1aWxkUmVj",
-            "eWNsaW5nUmVzcG9uc2USDwoHYnVpbGRJZBgBIAEoAxIPCgdmcm9tTmZ0GAIg",
-            "ASgJEg0KBW93bmVyGAMgASgDIjYKEk1pbnRCYXR0ZXJ5UmVxdWVzdBIPCgdt",
-            "aW50TnVtGAEgASgFEg8KB2dpZnROdW0YAiABKAUiFQoTTWludEJhdHRlcnlS",
-            "ZXNwb25zZSIjChJRdWVyeVBsYXllclJlcXVlc3QSDQoFdG9rZW4YASABKAki",
-            "RgoTUXVlcnlQbGF5ZXJSZXNwb25zZRIvCgZwbGF5ZXIYASABKAsyHy5nYW1l",
-            "TWVzc2FnZUNvcmUuUGxheWVyQmFzZURhdGEi8gEKE0NyZWF0ZVBsYXllclJl",
-            "cXVlc3QSDQoFdG9rZW4YASABKAkSEQoJbmlja19uYW1lGAIgASgJEg8KB3Jv",
-            "bGVfaWQYAyABKAUSDgoGZ2VuZGVyGAQgASgJEgwKBGljb24YBSABKAkSLwoH",
-            "ZmVhdHVyZRgGIAEoCzIeLmdhbWVNZXNzYWdlQ29yZS5QbGF5ZXJGZWF0dXJl",
-            "EigKB29zX3R5cGUYByABKA4yFy5nYW1lTWVzc2FnZUNvcmUuT1NUeXBlEi8K",
-            "CHBsYXRmb3JtGAggASgOMh0uZ2FtZU1lc3NhZ2VDb3JlLlBsYXRmb3JtVHlw",
-            "ZSJHChRDcmVhdGVQbGF5ZXJSZXNwb25zZRIvCgZwbGF5ZXIYASABKAsyHy5n",
-            "YW1lTWVzc2FnZUNvcmUuUGxheWVyQmFzZURhdGEiEQoPRW50ZXJNYXBSZXF1",
-            "ZXN0In8KEEVudGVyTWFwUmVzcG9uc2USIwoCbWUYASABKAsyFy5nYW1lTWVz",
-            "c2FnZUNvcmUuUGxheWVyEjEKCGxvY2F0aW9uGAIgASgLMh8uZ2FtZU1lc3Nh",
-            "Z2VDb3JlLkVudGl0eUxvY2F0aW9uEhMKC3JlbGl2ZV90aW1lGAMgASgFIk4K",
-            "GVVwZGF0ZVNlbGZMb2NhdGlvblJlcXVlc3QSMQoIbW92ZW1lbnQYASABKAsy",
-            "Hy5nYW1lTWVzc2FnZUNvcmUuRW50aXR5TW92ZW1lbnQiTwoaVXBkYXRlU2Vs",
-            "ZkxvY2F0aW9uUmVzcG9uc2USMQoIbW92ZW1lbnQYASABKAsyHy5nYW1lTWVz",
-            "c2FnZUNvcmUuRW50aXR5TW92ZW1lbnQizAEKD1VzZVNraWxsUmVxdWVzdBIQ",
-            "Cghza2lsbF9pZBgBIAEoBRIsCgNkaXIYAiABKAsyHy5nYW1lTWVzc2FnZUNv",
-            "cmUuRW50aXR5TG9jYXRpb24SNgoNZnJvbV9sb2NhdGlvbhgDIAEoCzIfLmdh",
-            "bWVNZXNzYWdlQ29yZS5FbnRpdHlMb2NhdGlvbhIsCgl0YXJnZXRfaWQYBCAB",
-            "KAsyGS5nYW1lTWVzc2FnZUNvcmUuRW50aXR5SWQSEwoLY29tYm9faW5kZXgY",
-            "BSABKAUiEgoQVXNlU2tpbGxSZXNwb25zZSJSChRSZXNwYXduUGxheWVyUmVx",
-            "dWVzdBI6Cg1yZXNwYXduX3BvaW50GAEgASgOMiMuZ2FtZU1lc3NhZ2VDb3Jl",
-            "LlBsYXllclJlc3Bhd25Qb2ludCJ7ChVSZXNwYXduUGxheWVyUmVzcG9uc2US",
-            "DwoHdXNlcl9pZBgBIAEoAxIOCgZjdXJfaHAYAiABKAUSDgoGYWN0aXZlGAMg",
-            "ASgIEjEKCGxvY2F0aW9uGAQgASgLMh8uZ2FtZU1lc3NhZ2VDb3JlLkVudGl0",
-            "eUxvY2F0aW9uIpcBCh5Ccm9hZENhc3RSZXNwYXduUGxheWVyUmVzcG9uc2US",
-            "DwoHdXNlcl9pZBgBIAEoAxIOCgZjdXJfaHAYAiABKAUSDgoGYWN0aXZlGAMg",
-            "ASgIEjEKCGxvY2F0aW9uGAQgASgLMh8uZ2FtZU1lc3NhZ2VDb3JlLkVudGl0",
-            "eUxvY2F0aW9uEhEKCXJldml2ZV9jZBgFIAEoAyIcChpQbGF5ZXJBY3Rpb25D",
-            "b2xsZWN0UmVxdWVzdCIdChtQbGF5ZXJBY3Rpb25Db2xsZWN0UmVzcG9uc2Ui",
-            "NwokQnJvYWRDYXN0UGxheWVyQWN0aW9uQ29sbGVjdFJlc3BvbnNlEg8KB3Vz",
-            "ZXJfaWQYASABKAMiJwoXUGxheWVyQWN0aW9uQ2hhdFJlcXVlc3QSDAoEc2hv",
-            "dxgBIAEoCCIaChhQbGF5ZXJBY3Rpb25DaGF0UmVzcG9uc2UiQgohQnJvYWRD",
-            "YXN0UGxheWVyQWN0aW9uQ2hhdFJlc3BvbnNlEg8KB3VzZXJfaWQYASABKAMS",
-            "DAoEc2hvdxgCIAEoCCKsAQofQnJvYWRDYXN0SW5pdE1hcEVsZW1lbnRSZXNw",
-            "b25zZRIzCgZlbnRpdHkYASADKAsyIy5nYW1lTWVzc2FnZUNvcmUuRW50aXR5",
-            "V2l0aExvY2F0aW9uEkUKFGRlc3RydWN0aW9uX2VsZW1lbnRzGAIgAygLMicu",
-            "Z2FtZU1lc3NhZ2VDb3JlLkRlc3RydWN0aW9uRWxlbWVudERhdGESDQoFZmlu",
-            "YWwYAyABKAgi1wEKIEJyb2FkQ2FzdE1hcEVudGl0eVVwZGF0ZVJlc3BvbnNl",
-            "EjkKDGVudGl0eV9hZGRlZBgBIAMoCzIjLmdhbWVNZXNzYWdlQ29yZS5FbnRp",
-            "dHlXaXRoTG9jYXRpb24SMQoOZW50aXR5X3JlbW92ZWQYAiADKAsyGS5nYW1l",
-            "TWVzc2FnZUNvcmUuRW50aXR5SWQSRQoUZGVzdHJ1Y3Rpb25fZWxlbWVudHMY",
-            "AyADKAsyJy5nYW1lTWVzc2FnZUNvcmUuRGVzdHJ1Y3Rpb25FbGVtZW50RGF0",
-            "YSJNChtCcm9hZENhc3RFbnRpdHlNb3ZlUmVzcG9uc2USLgoFbW92ZXMYASAD",
-            "KAsyHy5nYW1lTWVzc2FnZUNvcmUuRW50aXR5TW92ZW1lbnQiTQoeQnJvYWRD",
-            "YXN0RW50aXR5RGVzdHJveVJlc3BvbnNlEisKCGVudGl0aWVzGAEgAygLMhku",
-            "Z2FtZU1lc3NhZ2VDb3JlLkVudGl0eUlkIoMDCh1Ccm9hZENhc3RFbnRpdHlD",
-            "b21iYXRSZXNwb25zZRIxCgVzdGF0ZRgBIAEoDjIiLmdhbWVNZXNzYWdlQ29y",
-            "ZS5FbnRpdHlDb21iYXRTdGF0ZRIQCghza2lsbF9pZBgCIAEoBRITCgtjb21i",
-            "b19pbmRleBgDIAEoBRIuCgtmcm9tX2VudGl0eRgEIAEoCzIZLmdhbWVNZXNz",
-            "YWdlQ29yZS5FbnRpdHlJZBIsCgNkaXIYBSABKAsyHy5nYW1lTWVzc2FnZUNv",
-            "cmUuRW50aXR5TG9jYXRpb24SNgoNZnJvbV9sb2NhdGlvbhgGIAEoCzIfLmdh",
-            "bWVNZXNzYWdlQ29yZS5FbnRpdHlMb2NhdGlvbhIRCgljdXJfc3RhbXAYByAB",
-            "KAMSLgoHdGFyZ2V0cxgIIAMoCzIdLmdhbWVNZXNzYWdlQ29yZS5FbnRpdHlE",
-            "YW1hZ2USLwoGZmx5ZXJzGAkgAygLMh8uZ2FtZU1lc3NhZ2VDb3JlLlNraWxs",
-            "Rmx5ZXJEYXRhIjsKD1RlbGVwb3J0UmVxdWVzdBIoCgZ0b19wb3MYCSABKAsy",
-            "GC5nYW1lTWVzc2FnZUNvcmUuVmVjdG9yMyISChBUZWxlcG9ydFJlc3BvbnNl",
-            "IoMBCiNCcm9hZENhc3RFbnRpdHlBdmF0YXJVcGRhdGVSZXNwb25zZRIsCgll",
-            "bnRpdHlfaWQYASABKAsyGS5nYW1lTWVzc2FnZUNvcmUuRW50aXR5SWQSLgoH",
-            "YXZhdGFycxgCIAMoCzIdLmdhbWVNZXNzYWdlQ29yZS5QbGF5ZXJBdmF0YXIi",
-            "/gEKJkJyb2FkQ2FzdEVudGl0eUJ1aWxkRGF0YVVwZGF0ZVJlc3BvbnNlEiwK",
-            "CWVudGl0eV9pZBgBIAEoCzIZLmdhbWVNZXNzYWdlQ29yZS5FbnRpdHlJZBIT",
-            "CgtlbGVjdHJpY0VuZBgCIAEoBRIWCg5oYXJ2ZXN0U3RhcnRBdBgDIAEoBRIR",
-            "CgloYXJ2ZXN0QXQYBCABKAUSGAoQaGFydmVzdEl0ZW1Db3VudBgFIAEoBRIZ",
-            "ChFjb2xsZWN0aW9uU3RhcnRBdBgGIAEoBRIUCgxjb2xsZWN0aW9uQXQYByAB",
-            "KAUSGwoTY29sbGVjdGlvbkl0ZW1Db3VudBgIIAEoBSImChdTY2VuZURlc3Ry",
-            "dWN0aW9uUmVxdWVzdBILCgNpZHMYASADKAMiGgoYU2NlbmVEZXN0cnVjdGlv",
-            "blJlc3BvbnNlImoKIUJyb2FkQ2FzdFNjZW5lRGVzdHJ1Y3Rpb25SZXNwb25z",
-            "ZRJFChRkZXN0cnVjdGlvbl9lbGVtZW50cxgBIAMoCzInLmdhbWVNZXNzYWdl",
-            "Q29yZS5EZXN0cnVjdGlvbkVsZW1lbnREYXRhIi0KFlF1ZXJ5U2VydmVyVGlt",
-            "ZVJlcXVlc3QSEwoLY2xpZW50X3RpbWUYASABKAMiQwoXUXVlcnlTZXJ2ZXJU",
-            "aW1lUmVzcG9uc2USEwoLY2xpZW50X3RpbWUYASABKAMSEwoLc3lzdGVtX3Rp",
-            "bWUYAiABKAMimwEKHkJyb2FkQ2FzdENoYW5nZVNlcnZpY2VSZXNwb25zZRIt",
-            "CgdzZXJUeXBlGAEgASgOMhwuZ2FtZU1lc3NhZ2VDb3JlLlNlcnZpY2VUeXBl",
-            "EjgKCnNlclN1YlR5cGUYAiABKA4yJC5nYW1lTWVzc2FnZUNvcmUuU2NlbmVT",
-            "ZXJ2aWNlU3ViVHlwZRIQCghzZXJPd25lchgDIAEoAyISChBTZWxmVGFza3NS",
-            "ZXF1ZXN0Ij8KEVNlbGZUYXNrc1Jlc3BvbnNlEioKBXRhc2tzGAEgASgLMhsu",
-            "Z2FtZU1lc3NhZ2VDb3JlLlBsYXllclRhc2sigQEKH0Jyb2FkQ2FzdFVwZGF0",
-            "ZVRhc2tMaXN0UmVzcG9uc2USKwoEa2luZBgBIAEoDjIdLmdhbWVNZXNzYWdl",
-            "Q29yZS5UYXNrTGlzdFR5cGUSMQoOdGFza19saXN0X2luZm8YAiABKAsyGS5n",
-            "YW1lTWVzc2FnZUNvcmUuVGFza0xpc3QiQAoRQWNjZXB0VGFza1JlcXVlc3QS",
-            "KwoEa2luZBgBIAEoDjIdLmdhbWVNZXNzYWdlQ29yZS5UYXNrTGlzdFR5cGUi",
-            "RwoSQWNjZXB0VGFza1Jlc3BvbnNlEjEKDnRhc2tfbGlzdF9pbmZvGAEgASgL",
-            "MhkuZ2FtZU1lc3NhZ2VDb3JlLlRhc2tMaXN0IkUKFkFiYW5kb25tZW50VGFz",
-            "a1JlcXVlc3QSKwoEa2luZBgBIAEoDjIdLmdhbWVNZXNzYWdlQ29yZS5UYXNr",
-            "TGlzdFR5cGUiTAoXQWJhbmRvbm1lbnRUYXNrUmVzcG9uc2USMQoOdGFza19s",
-            "aXN0X2luZm8YASABKAsyGS5nYW1lTWVzc2FnZUNvcmUuVGFza0xpc3QiSgoR",
-            "VGFza1Jld2FyZFJlcXVlc3QSNQoOdGFza19saXN0X2tpbmQYASABKA4yHS5n",
-            "YW1lTWVzc2FnZUNvcmUuVGFza0xpc3RUeXBlIkcKElRhc2tSZXdhcmRSZXNw",
-            "b25zZRIxCg50YXNrX2xpc3RfaW5mbxgBIAEoCzIZLmdhbWVNZXNzYWdlQ29y",
-            "ZS5UYXNrTGlzdCJEChVUYXNrTGlzdFJld2FyZFJlcXVlc3QSKwoEa2luZBgB",
-            "IAEoDjIdLmdhbWVNZXNzYWdlQ29yZS5UYXNrTGlzdFR5cGUiSwoWVGFza0xp",
-            "c3RSZXdhcmRSZXNwb25zZRIxCg50YXNrX2xpc3RfaW5mbxgBIAEoCzIZLmdh",
-            "bWVNZXNzYWdlQ29yZS5UYXNrTGlzdCK5AgoaVXBncmFkZVRhc2tQcm9ncmVz",
-            "c1JlcXVlc3QSNQoOdGFza19saXN0X2tpbmQYASABKA4yHS5nYW1lTWVzc2Fn",
-            "ZUNvcmUuVGFza0xpc3RUeXBlEi4KBWl0ZW1zGAIgAygLMh8uZ2FtZU1lc3Nh",
-            "Z2VDb3JlLlRhc2tPcHRpb25JdGVtEjYKA3BvcxgDIAEoCzIpLmdhbWVNZXNz",
-            "YWdlQ29yZS5UYXNrT3B0aW9uVGFyZ2V0UG9zaXRpb24SNwoJdXNlUmVjaXBl",
-            "GAQgASgLMiQuZ2FtZU1lc3NhZ2VDb3JlLlRhc2tPcHRpb25Vc2VSZWNpcGUS",
-            "QwoPY3JhZnRTa2lsbExldmVsGAUgASgLMiouZ2FtZU1lc3NhZ2VDb3JlLlRh",
-            "c2tPcHRpb25DcmFmdFNraWxsTGV2ZWwiHQobVXBncmFkZVRhc2tQcm9ncmVz",
-            "c1Jlc3BvbnNlIrkBChtCcm9hZENhc3RUYXNrUmV3YXJkUmVzcG9uc2USGwoT",
-            "aXNfdGFza19saXN0X3Jld2FyZBgBIAEoCBI1Cg50YXNrX2xpc3Rfa2luZBgC",
-            "IAEoDjIdLmdhbWVNZXNzYWdlQ29yZS5UYXNrTGlzdFR5cGUSEgoKcmV3YXJk",
-            "X2V4cBgDIAEoBRIyCgtyZXdhcmRfaXRlbRgEIAMoCzIdLmdhbWVNZXNzYWdl",
-            "Q29yZS5JdGVtQmFzZUluZm8iegoWU2VuZENoYXRNZXNzYWdlUmVxdWVzdBIz",
-            "CgljaGF0X3R5cGUYASABKA4yIC5nYW1lTWVzc2FnZUNvcmUuQ2hhdENoYW5u",
-            "ZWxUeXBlEg8KB2NvbnRlbnQYAiABKAkSGgoScmVjZWl2ZXJfcGxheWVyX2lk",
-            "GAMgASgDIikKF1NlbmRDaGF0TWVzc2FnZVJlc3BvbnNlEg4KBm1zZ19pZBgB",
-            "IAEoAyJqCh1Ccm9hZENhc3RDaGF0TWVzc2FnZXNSZXNwb25zZRIuCghtZXNz",
-            "YWdlcxgBIAMoCzIcLmdhbWVNZXNzYWdlQ29yZS5DaGF0TWVzc2FnZRIZChFo",
-            "aXN0b3JpY2FsX3JlY29yZBgCIAEoCCI1CiJCcm9hZENhc3RSZW1vdmVDaGF0",
-            "TWVzc2FnZVJlc3BvbnNlEg8KB21zZ19pZHMYASADKAMiUgogQnJvYWRDYXN0",
-            "VXBkYXRlQ2hhdFN0YXRlUmVzcG9uc2USLgoKY2hhdF9zdGF0ZRgBIAEoDjIa",
-            "LmdhbWVNZXNzYWdlQ29yZS5DaGF0U3RhdGUiDQoLUGluZ1JlcXVlc3QiDgoM",
-            "UGluZ1Jlc3BvbnNlYgZwcm90bzM="));
-      descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
-          new pbr::FileDescriptor[] { global::GameMessageCore.MessageCmdReflection.Descriptor, global::GameMessageCore.PlayerReflection.Descriptor, global::GameMessageCore.OsReflection.Descriptor, global::GameMessageCore.PlatformReflection.Descriptor, global::GameMessageCore.ItemReflection.Descriptor, global::GameMessageCore.ItemSlotReflection.Descriptor, global::GameMessageCore.EntityReflection.Descriptor, global::GameMessageCore.EntityProfileReflection.Descriptor, global::GameMessageCore.SkillReflection.Descriptor, global::GameMessageCore.TaskReflection.Descriptor, global::GameMessageCore.ChatReflection.Descriptor, global::GameMessageCore.VectorReflection.Descriptor, global::GameMessageCore.LandReflection.Descriptor, global::GameMessageCore.ServiceReflection.Descriptor, },
-          new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::GameMessageCore.Envelope), global::GameMessageCore.Envelope.Parser, new[]{ "Type", "SeqId", "ErrorCode", "ErrorMessage", "BroadCastTickOutResponse", "ItemGetRequest", "ItemGetResponse", "ItemUseRequest", "ItemUseResponse", "ItemDropRequest", "ItemDropResponse", "UpdateAvatarRequest", "UpdateAvatarResponse", "UnloadAvatarRequest", "UnloadAvatarResponse", "BroadCastItemAddResponse", "BroadCastItemUpdateResponse", "BroadCastItemDelResponse", "BroadCastUpdateItemSlotResponse", "GetItemSlotRequest", "GetItemSlotResponse", "UpgradeItemSlotRequest", "UpgradeItemSlotResponse", "SigninPlayerRequest", "SigninPlayerResponse", "SignOutPlayerRequest", "SignOutPlayerResponse", "UpgradePlayerLevelRequest", "UpgradePlayerLevelResponse", "QueryLandsRequest", "QueryLandsResponse", "BroadCastInitLandResponse", "BroadCastInitItemResponse", "BuildRequest", "BuildResponse", "RecyclingRequest", "RecyclingResponse", "ChargedRequest", "ChargedResponse", "HarvestRequest", "HarvestResponse", "CollectionRequest", "CollectionResponse", "BroadCastMultiUpLandResponse", "SelfNftBuildsRequest", "SelfNftBuildsResponse", "BroadCastSelfBuildUpdateResponse", "BroadCastSelfBuildRecyclingResponse", "MintBatteryRequest", "MintBatteryResponse", "QueryPlayerRequest", "QueryPlayerResponse", "CreatePlayerRequest", "CreatePlayerResponse", "EnterMapRequest", "EnterMapResponse", "UpdateSelfLocationRequest", "UpdateSelfLocationResponse", "UseSkillRequest", "UseSkillResponse", "RespawnPlayerRequest", "RespawnPlayerResponse", "BroadCastInitMapElementResponse", "BroadCastMapEntityUpdateResponse", "BroadCastEntityDestroyResponse", "BroadCastEntityMoveResponse", "BroadCastEntityCombatResponse", "BroadCastRespawnPlayerResponse", "TeleportRequest", "TeleportResponse", "BroadCastEntityProfileUpdateResponse", "BroadCastMonsterDeathResponse", "BroadCastEntityAvatarUpdateResponse", "BroadCastEntityBattleDataUpdateResponse", "BroadCastEntityBuildDataUpdateResponse", "PlayerActionCollectRequest", "PlayerActionCollectResponse", "BroadCastPlayerActionCollectResponse", "SceneDestructionRequest", "SceneDestructionResponse", "BroadCastSceneDestructionResponse", "PlayerActionChatRequest", "PlayerActionChatResponse", "BroadCastPlayerActionChatResponse", "QueryServerTimeRequest", "QueryServerTimeResponse", "BroadCastChangeServiceResponse", "SelfTasksRequest", "SelfTasksResponse", "BroadCastUpdateTaskListResponse", "AcceptTaskRequest", "AcceptTaskResponse", "AbandonmentTaskRequest", "AbandonmentTaskResponse", "TaskRewardRequest", "TaskRewardResponse", "TaskListRewardRequest", "TaskListRewardResponse", "UpgradeTaskProgressRequest", "UpgradeTaskProgressResponse", "BroadCastTaskRewardResponse", "SendChatMessageRequest", "SendChatMessageResponse", "BroadCastChatMessagesResponse", "BroadCastRemoveChatMessageResponse", "BroadCastUpdateChatStateResponse", "PingRequest", "PingResponse" }, new[]{ "Payload" }, null, null, null),
->>>>>>> 0b59364 (grpc user join new service msg and broad client change service msg)
             new pbr::GeneratedClrTypeInfo(typeof(global::GameMessageCore.BroadCastTickOutResponse), global::GameMessageCore.BroadCastTickOutResponse.Parser, new[]{ "Kind" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::GameMessageCore.ItemGetRequest), global::GameMessageCore.ItemGetRequest.Parser, null, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::GameMessageCore.ItemGetResponse), global::GameMessageCore.ItemGetResponse.Parser, null, null, null, null, null),
@@ -26075,11 +25773,7 @@ namespace GameMessageCore {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
-<<<<<<< HEAD
       get { return global::GameMessageCore.MessageBodyReflection.Descriptor.MessageTypes[91]; }
-=======
-      get { return global::GameMessageCore.MessageBodyReflection.Descriptor.MessageTypes[83]; }
->>>>>>> 0b59364 (grpc user join new service msg and broad client change service msg)
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -26342,11 +26036,7 @@ namespace GameMessageCore {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
-<<<<<<< HEAD
       get { return global::GameMessageCore.MessageBodyReflection.Descriptor.MessageTypes[92]; }
-=======
-      get { return global::GameMessageCore.MessageBodyReflection.Descriptor.MessageTypes[84]; }
->>>>>>> 0b59364 (grpc user join new service msg and broad client change service msg)
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -26498,11 +26188,7 @@ namespace GameMessageCore {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
-<<<<<<< HEAD
       get { return global::GameMessageCore.MessageBodyReflection.Descriptor.MessageTypes[93]; }
-=======
-      get { return global::GameMessageCore.MessageBodyReflection.Descriptor.MessageTypes[85]; }
->>>>>>> 0b59364 (grpc user join new service msg and broad client change service msg)
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -26706,11 +26392,7 @@ namespace GameMessageCore {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
-<<<<<<< HEAD
       get { return global::GameMessageCore.MessageBodyReflection.Descriptor.MessageTypes[94]; }
-=======
-      get { return global::GameMessageCore.MessageBodyReflection.Descriptor.MessageTypes[86]; }
->>>>>>> 0b59364 (grpc user join new service msg and broad client change service msg)
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -26948,11 +26630,7 @@ namespace GameMessageCore {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
-<<<<<<< HEAD
       get { return global::GameMessageCore.MessageBodyReflection.Descriptor.MessageTypes[95]; }
-=======
-      get { return global::GameMessageCore.MessageBodyReflection.Descriptor.MessageTypes[87]; }
->>>>>>> 0b59364 (grpc user join new service msg and broad client change service msg)
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -27141,11 +26819,7 @@ namespace GameMessageCore {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
-<<<<<<< HEAD
       get { return global::GameMessageCore.MessageBodyReflection.Descriptor.MessageTypes[96]; }
-=======
-      get { return global::GameMessageCore.MessageBodyReflection.Descriptor.MessageTypes[88]; }
->>>>>>> 0b59364 (grpc user join new service msg and broad client change service msg)
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -27346,11 +27020,7 @@ namespace GameMessageCore {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
-<<<<<<< HEAD
       get { return global::GameMessageCore.MessageBodyReflection.Descriptor.MessageTypes[97]; }
-=======
-      get { return global::GameMessageCore.MessageBodyReflection.Descriptor.MessageTypes[89]; }
->>>>>>> 0b59364 (grpc user join new service msg and broad client change service msg)
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -27542,11 +27212,7 @@ namespace GameMessageCore {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
-<<<<<<< HEAD
       get { return global::GameMessageCore.MessageBodyReflection.Descriptor.MessageTypes[98]; }
-=======
-      get { return global::GameMessageCore.MessageBodyReflection.Descriptor.MessageTypes[90]; }
->>>>>>> 0b59364 (grpc user join new service msg and broad client change service msg)
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -27747,11 +27413,7 @@ namespace GameMessageCore {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
-<<<<<<< HEAD
       get { return global::GameMessageCore.MessageBodyReflection.Descriptor.MessageTypes[99]; }
-=======
-      get { return global::GameMessageCore.MessageBodyReflection.Descriptor.MessageTypes[91]; }
->>>>>>> 0b59364 (grpc user join new service msg and broad client change service msg)
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -27940,11 +27602,7 @@ namespace GameMessageCore {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
-<<<<<<< HEAD
       get { return global::GameMessageCore.MessageBodyReflection.Descriptor.MessageTypes[100]; }
-=======
-      get { return global::GameMessageCore.MessageBodyReflection.Descriptor.MessageTypes[92]; }
->>>>>>> 0b59364 (grpc user join new service msg and broad client change service msg)
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -28145,11 +27803,7 @@ namespace GameMessageCore {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
-<<<<<<< HEAD
       get { return global::GameMessageCore.MessageBodyReflection.Descriptor.MessageTypes[101]; }
-=======
-      get { return global::GameMessageCore.MessageBodyReflection.Descriptor.MessageTypes[93]; }
->>>>>>> 0b59364 (grpc user join new service msg and broad client change service msg)
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -28338,11 +27992,7 @@ namespace GameMessageCore {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
-<<<<<<< HEAD
       get { return global::GameMessageCore.MessageBodyReflection.Descriptor.MessageTypes[102]; }
-=======
-      get { return global::GameMessageCore.MessageBodyReflection.Descriptor.MessageTypes[94]; }
->>>>>>> 0b59364 (grpc user join new service msg and broad client change service msg)
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -28540,11 +28190,7 @@ namespace GameMessageCore {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
-<<<<<<< HEAD
       get { return global::GameMessageCore.MessageBodyReflection.Descriptor.MessageTypes[103]; }
-=======
-      get { return global::GameMessageCore.MessageBodyReflection.Descriptor.MessageTypes[95]; }
->>>>>>> 0b59364 (grpc user join new service msg and broad client change service msg)
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -28909,11 +28555,7 @@ namespace GameMessageCore {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
-<<<<<<< HEAD
       get { return global::GameMessageCore.MessageBodyReflection.Descriptor.MessageTypes[104]; }
-=======
-      get { return global::GameMessageCore.MessageBodyReflection.Descriptor.MessageTypes[96]; }
->>>>>>> 0b59364 (grpc user join new service msg and broad client change service msg)
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -29065,11 +28707,7 @@ namespace GameMessageCore {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
-<<<<<<< HEAD
       get { return global::GameMessageCore.MessageBodyReflection.Descriptor.MessageTypes[105]; }
-=======
-      get { return global::GameMessageCore.MessageBodyReflection.Descriptor.MessageTypes[97]; }
->>>>>>> 0b59364 (grpc user join new service msg and broad client change service msg)
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -29358,11 +28996,7 @@ namespace GameMessageCore {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
-<<<<<<< HEAD
       get { return global::GameMessageCore.MessageBodyReflection.Descriptor.MessageTypes[106]; }
-=======
-      get { return global::GameMessageCore.MessageBodyReflection.Descriptor.MessageTypes[98]; }
->>>>>>> 0b59364 (grpc user join new service msg and broad client change service msg)
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -29629,11 +29263,7 @@ namespace GameMessageCore {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
-<<<<<<< HEAD
       get { return global::GameMessageCore.MessageBodyReflection.Descriptor.MessageTypes[107]; }
-=======
-      get { return global::GameMessageCore.MessageBodyReflection.Descriptor.MessageTypes[99]; }
->>>>>>> 0b59364 (grpc user join new service msg and broad client change service msg)
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -29825,11 +29455,7 @@ namespace GameMessageCore {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
-<<<<<<< HEAD
       get { return global::GameMessageCore.MessageBodyReflection.Descriptor.MessageTypes[108]; }
-=======
-      get { return global::GameMessageCore.MessageBodyReflection.Descriptor.MessageTypes[100]; }
->>>>>>> 0b59364 (grpc user join new service msg and broad client change service msg)
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -30044,11 +29670,7 @@ namespace GameMessageCore {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
-<<<<<<< HEAD
       get { return global::GameMessageCore.MessageBodyReflection.Descriptor.MessageTypes[109]; }
-=======
-      get { return global::GameMessageCore.MessageBodyReflection.Descriptor.MessageTypes[101]; }
->>>>>>> 0b59364 (grpc user join new service msg and broad client change service msg)
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -30228,11 +29850,7 @@ namespace GameMessageCore {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
-<<<<<<< HEAD
       get { return global::GameMessageCore.MessageBodyReflection.Descriptor.MessageTypes[110]; }
-=======
-      get { return global::GameMessageCore.MessageBodyReflection.Descriptor.MessageTypes[102]; }
->>>>>>> 0b59364 (grpc user join new service msg and broad client change service msg)
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -30424,11 +30042,7 @@ namespace GameMessageCore {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
-<<<<<<< HEAD
       get { return global::GameMessageCore.MessageBodyReflection.Descriptor.MessageTypes[111]; }
-=======
-      get { return global::GameMessageCore.MessageBodyReflection.Descriptor.MessageTypes[103]; }
->>>>>>> 0b59364 (grpc user join new service msg and broad client change service msg)
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -30580,11 +30194,7 @@ namespace GameMessageCore {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
-<<<<<<< HEAD
       get { return global::GameMessageCore.MessageBodyReflection.Descriptor.MessageTypes[112]; }
-=======
-      get { return global::GameMessageCore.MessageBodyReflection.Descriptor.MessageTypes[104]; }
->>>>>>> 0b59364 (grpc user join new service msg and broad client change service msg)
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
