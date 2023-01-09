@@ -1,0 +1,21 @@
+syntax = "proto3";
+package gameMessageCore;
+option go_package = "./messageGo/proto";
+ 
+
+// 天赋类型
+enum TalentType {
+    TalentTypeUnknow = 0;
+    Farming = 1;
+    Fighting = 2;
+}
+
+// 天赋模式
+enum TalentModeType{
+    //获得主动技能
+    Active = 0;
+    // 获得被动技能
+    Passive = 1;
+    // 获得合成配方
+    Recipes = 2;
+} 

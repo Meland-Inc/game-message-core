@@ -14,5 +14,6 @@ func TableModels() []interface{} {
 		TaskTableRow{},
 		TaskListTableRow{},
 		SceneAreaRow{},
+		TalentTreeRow{},
 	}
 }
