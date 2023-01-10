@@ -43,4 +43,5 @@ type GetUserDataOutput struct {
 	Pos        base_data.GrpcVector3        `json:"pos"`
 	Dir        base_data.GrpcVector3        `json:"dir"`
 	Avatars    []base_data.GrpcPlayerAvatar `json:"avatars"`
+	TalentData base_data.GrpcTalentData     `json:"talentData"`
 }

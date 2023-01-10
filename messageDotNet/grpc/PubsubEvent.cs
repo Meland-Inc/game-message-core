@@ -96,6 +96,11 @@ public static class SubscriptionEvent
     /// </summary>
     public const string GRANARY_STOCKPILE = "EventTopicGranaryStockpile";
 
+    /// <summary>
+    /// update user talent data event
+    /// </summary>
+    public const string UPDATE_TALENT = "EventTopicUpdateTalent";
+
 
 
 }

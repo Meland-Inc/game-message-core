@@ -34,4 +34,7 @@ const (
 	SubscriptionEventSaveHomeData SubscriptionEvent = "EventTopicSaveHomeData"
 	// home Granary Stockpile Event
 	SubscriptionEventGranaryStockpile SubscriptionEvent = "EventTopicGranaryStockpile"
+
+	// update user talent data event
+	SubscriptionEventUpdateTalent SubscriptionEvent = "EventTopicUpdateTalent"
 )

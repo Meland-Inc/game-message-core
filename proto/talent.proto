@@ -7,7 +7,7 @@ option go_package = "./messageGo/proto";
 enum TalentType {
     TalentTypeUnknow = 0;
     Farming = 1;
-    Fighting = 2;
+    Battle = 2;
 }
 
 // 天赋模式
@@ -19,3 +19,33 @@ enum TalentModeType{
     // 获得合成配方
     Recipes = 2;
 } 
+
+
+message TalentExp {
+    TalentType  type = 1;
+    // 真实可用exp
+    int32       curExp = 2;
+    // 总经验
+    int32       totalExp = 3;
+}
+
+message TalentLevel{
+    TalentType  type = 1;
+    int32       level = 2;
+}
+
+message TalentNode{
+    int32       nodeId = 1;
+    int32       level = 2;
+}
+
+message TalentTree{
+    TalentType          type = 1;
+    repeated TalentNode unlockNodes = 2;
+}
+
+message TalentData{
+    repeated TalentExp      expData = 1;
+    repeated TalentLevel    levelData = 2;
+    repeated TalentTree     tree = 3;
+}

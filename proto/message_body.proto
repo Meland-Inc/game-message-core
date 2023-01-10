@@ -16,6 +16,7 @@ import "chat.proto";
 import "vector.proto";
 import "land.proto";
 import "service.proto";
+import "talent.proto";
 
 
 
@@ -84,6 +85,10 @@ message Envelope {
     GranaryCollectResponse            granary_collect_response              = 0x010054;
     BroadCastGranaryUpdateResponse    broad_cast_granary_update_response    = 0x010055;
     BroadCastUpGranaryItemResponse    broad_cast_up_granary_item_response   = 0x010057;
+    QueryTalentRequest                query_talent_request                  = 0x010059;
+    QueryTalentResponse               query_talent_response                 = 0x010060;
+    UpgradeTalentNodeRequest          upgrade_talent_node_request           = 0x010061;
+    UpgradeTalentNodeResponse         upgrade_talent_node_response          = 0x010062;
 
 
 
@@ -363,6 +368,17 @@ message BroadCastGranaryUpdateResponse{
 message BroadCastUpGranaryItemResponse{
   ItemBaseInfo    items = 1;
 }
+
+message QueryTalentRequest{}        
+message QueryTalentResponse{
+  TalentData      data = 1;
+}       
+message UpgradeTalentNodeRequest{
+  TalentType      type = 1;
+  int32           nodeId = 2;
+}  
+message UpgradeTalentNodeResponse{} 
+
 
 
 //accountSer协议 : 0x02ZZZZ  账号服务 协议 ************************************

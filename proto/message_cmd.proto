@@ -63,7 +63,8 @@ enum EnvelopeType {
     GranaryCollect                  = 0x010053;     // 取出仓库中的所有道具
     BroadCastGranaryUpdate          = 0x010055;     // 全量更新仓库数据
     BroadCastUpGranaryItem          = 0x010057;     // 更新仓库道具
-
+    QueryTalent                     = 0x010059;     // 查询天赋数据
+    UpgradeTalentNode               = 0x010061;     // 解锁/升级 天赋节点
 
 
 
