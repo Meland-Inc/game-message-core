@@ -63,8 +63,7 @@ enum EnvelopeType {
     GranaryCollect                  = 0x010053;     // 取出仓库中的所有道具
     BroadCastGranaryUpdate          = 0x010055;     // 全量更新仓库数据
     BroadCastUpGranaryItem          = 0x010057;     // 更新仓库道具
-    QueryTalent                     = 0x010059;     // 查询天赋数据
-    UpgradeTalentNode               = 0x010061;     // 解锁/升级 天赋节点
+    UpgradeTalentNode               = 0x010059;     // 解锁/升级 天赋节点
 
 
 
@@ -96,8 +95,10 @@ enum EnvelopeType {
     PlayerActionChat                = 0x030037;
     BroadCastPlayerActionChat       = 0x030039;
     GetHomeData                     = 0x030041; 
-    QueryServerTime                 = 0x030043;       // 客户端请求服务器时间
+    QueryServerTime                 = 0x030043;     // 客户端请求服务器时间
     BroadCastChangeService          = 0x030045;
+    QueryTalent                     = 0x030047;     // 查询天赋数据
+
 
 
     //taskServer协议 : 0x04ZZZZ  任务服务 协议 ************************************
