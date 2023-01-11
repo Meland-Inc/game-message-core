@@ -35,12 +35,13 @@ namespace GameMessageCore {
             "YRIrCgdleHBEYXRhGAEgAygLMhouZ2FtZU1lc3NhZ2VDb3JlLlRhbGVudEV4",
             "cBIvCglsZXZlbERhdGEYAiADKAsyHC5nYW1lTWVzc2FnZUNvcmUuVGFsZW50",
             "TGV2ZWwSKQoEdHJlZRgDIAMoCzIbLmdhbWVNZXNzYWdlQ29yZS5UYWxlbnRU",
-            "cmVlKjsKClRhbGVudFR5cGUSFAoQVGFsZW50VHlwZVVua25vdxAAEgsKB0Zh",
-            "cm1pbmcQARIKCgZCYXR0bGUQAio2Cg5UYWxlbnRNb2RlVHlwZRIKCgZBY3Rp",
-            "dmUQABILCgdQYXNzaXZlEAESCwoHUmVjaXBlcxACYgZwcm90bzM="));
+            "cmVlKjwKClRhbGVudFR5cGUSFQoRVGFsZW50VHlwZVVua25vd24QABILCgdG",
+            "YXJtaW5nEAESCgoGQmF0dGxlEAIqQQoPVGFsZW50R2FpbnNUeXBlEg8KC0Fj",
+            "dGl2ZVNraWxsEAASEAoMUGFzc2l2ZVNraWxsEAESCwoHUmVjaXBlcxACYgZw",
+            "cm90bzM="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
-          new pbr::GeneratedClrTypeInfo(new[] {typeof(global::GameMessageCore.TalentType), typeof(global::GameMessageCore.TalentModeType), }, null, new pbr::GeneratedClrTypeInfo[] {
+          new pbr::GeneratedClrTypeInfo(new[] {typeof(global::GameMessageCore.TalentType), typeof(global::GameMessageCore.TalentGainsType), }, null, new pbr::GeneratedClrTypeInfo[] {
             new pbr::GeneratedClrTypeInfo(typeof(global::GameMessageCore.TalentExp), global::GameMessageCore.TalentExp.Parser, new[]{ "Type", "CurExp", "TotalExp" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::GameMessageCore.TalentLevel), global::GameMessageCore.TalentLevel.Parser, new[]{ "Type", "Level" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::GameMessageCore.TalentNode), global::GameMessageCore.TalentNode.Parser, new[]{ "NodeId", "Level" }, null, null, null, null),
@@ -56,23 +57,23 @@ namespace GameMessageCore {
   /// 天赋类型
   /// </summary>
   public enum TalentType {
-    [pbr::OriginalName("TalentTypeUnknow")] Unknow = 0,
+    [pbr::OriginalName("TalentTypeUnknown")] Unknown = 0,
     [pbr::OriginalName("Farming")] Farming = 1,
     [pbr::OriginalName("Battle")] Battle = 2,
   }
 
   /// <summary>
-  /// 天赋模式
+  /// 天赋收益
   /// </summary>
-  public enum TalentModeType {
+  public enum TalentGainsType {
     /// <summary>
     ///获得主动技能
     /// </summary>
-    [pbr::OriginalName("Active")] Active = 0,
+    [pbr::OriginalName("ActiveSkill")] ActiveSkill = 0,
     /// <summary>
     /// 获得被动技能
     /// </summary>
-    [pbr::OriginalName("Passive")] Passive = 1,
+    [pbr::OriginalName("PassiveSkill")] PassiveSkill = 1,
     /// <summary>
     /// 获得合成配方
     /// </summary>
@@ -130,7 +131,7 @@ namespace GameMessageCore {
 
     /// <summary>Field number for the "type" field.</summary>
     public const int TypeFieldNumber = 1;
-    private global::GameMessageCore.TalentType type_ = global::GameMessageCore.TalentType.Unknow;
+    private global::GameMessageCore.TalentType type_ = global::GameMessageCore.TalentType.Unknown;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::GameMessageCore.TalentType Type {
@@ -195,7 +196,7 @@ namespace GameMessageCore {
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override int GetHashCode() {
       int hash = 1;
-      if (Type != global::GameMessageCore.TalentType.Unknow) hash ^= Type.GetHashCode();
+      if (Type != global::GameMessageCore.TalentType.Unknown) hash ^= Type.GetHashCode();
       if (CurExp != 0) hash ^= CurExp.GetHashCode();
       if (TotalExp != 0) hash ^= TotalExp.GetHashCode();
       if (_unknownFields != null) {
@@ -216,7 +217,7 @@ namespace GameMessageCore {
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       output.WriteRawMessage(this);
     #else
-      if (Type != global::GameMessageCore.TalentType.Unknow) {
+      if (Type != global::GameMessageCore.TalentType.Unknown) {
         output.WriteRawTag(8);
         output.WriteEnum((int) Type);
       }
@@ -238,7 +239,7 @@ namespace GameMessageCore {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
-      if (Type != global::GameMessageCore.TalentType.Unknow) {
+      if (Type != global::GameMessageCore.TalentType.Unknown) {
         output.WriteRawTag(8);
         output.WriteEnum((int) Type);
       }
@@ -260,7 +261,7 @@ namespace GameMessageCore {
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public int CalculateSize() {
       int size = 0;
-      if (Type != global::GameMessageCore.TalentType.Unknow) {
+      if (Type != global::GameMessageCore.TalentType.Unknown) {
         size += 1 + pb::CodedOutputStream.ComputeEnumSize((int) Type);
       }
       if (CurExp != 0) {
@@ -281,7 +282,7 @@ namespace GameMessageCore {
       if (other == null) {
         return;
       }
-      if (other.Type != global::GameMessageCore.TalentType.Unknow) {
+      if (other.Type != global::GameMessageCore.TalentType.Unknown) {
         Type = other.Type;
       }
       if (other.CurExp != 0) {
@@ -398,7 +399,7 @@ namespace GameMessageCore {
 
     /// <summary>Field number for the "type" field.</summary>
     public const int TypeFieldNumber = 1;
-    private global::GameMessageCore.TalentType type_ = global::GameMessageCore.TalentType.Unknow;
+    private global::GameMessageCore.TalentType type_ = global::GameMessageCore.TalentType.Unknown;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::GameMessageCore.TalentType Type {
@@ -444,7 +445,7 @@ namespace GameMessageCore {
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override int GetHashCode() {
       int hash = 1;
-      if (Type != global::GameMessageCore.TalentType.Unknow) hash ^= Type.GetHashCode();
+      if (Type != global::GameMessageCore.TalentType.Unknown) hash ^= Type.GetHashCode();
       if (Level != 0) hash ^= Level.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
@@ -464,7 +465,7 @@ namespace GameMessageCore {
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       output.WriteRawMessage(this);
     #else
-      if (Type != global::GameMessageCore.TalentType.Unknow) {
+      if (Type != global::GameMessageCore.TalentType.Unknown) {
         output.WriteRawTag(8);
         output.WriteEnum((int) Type);
       }
@@ -482,7 +483,7 @@ namespace GameMessageCore {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
-      if (Type != global::GameMessageCore.TalentType.Unknow) {
+      if (Type != global::GameMessageCore.TalentType.Unknown) {
         output.WriteRawTag(8);
         output.WriteEnum((int) Type);
       }
@@ -500,7 +501,7 @@ namespace GameMessageCore {
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public int CalculateSize() {
       int size = 0;
-      if (Type != global::GameMessageCore.TalentType.Unknow) {
+      if (Type != global::GameMessageCore.TalentType.Unknown) {
         size += 1 + pb::CodedOutputStream.ComputeEnumSize((int) Type);
       }
       if (Level != 0) {
@@ -518,7 +519,7 @@ namespace GameMessageCore {
       if (other == null) {
         return;
       }
-      if (other.Type != global::GameMessageCore.TalentType.Unknow) {
+      if (other.Type != global::GameMessageCore.TalentType.Unknown) {
         Type = other.Type;
       }
       if (other.Level != 0) {
@@ -850,7 +851,7 @@ namespace GameMessageCore {
 
     /// <summary>Field number for the "type" field.</summary>
     public const int TypeFieldNumber = 1;
-    private global::GameMessageCore.TalentType type_ = global::GameMessageCore.TalentType.Unknow;
+    private global::GameMessageCore.TalentType type_ = global::GameMessageCore.TalentType.Unknown;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::GameMessageCore.TalentType Type {
@@ -895,7 +896,7 @@ namespace GameMessageCore {
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override int GetHashCode() {
       int hash = 1;
-      if (Type != global::GameMessageCore.TalentType.Unknow) hash ^= Type.GetHashCode();
+      if (Type != global::GameMessageCore.TalentType.Unknown) hash ^= Type.GetHashCode();
       hash ^= unlockNodes_.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
@@ -915,7 +916,7 @@ namespace GameMessageCore {
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       output.WriteRawMessage(this);
     #else
-      if (Type != global::GameMessageCore.TalentType.Unknow) {
+      if (Type != global::GameMessageCore.TalentType.Unknown) {
         output.WriteRawTag(8);
         output.WriteEnum((int) Type);
       }
@@ -930,7 +931,7 @@ namespace GameMessageCore {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
-      if (Type != global::GameMessageCore.TalentType.Unknow) {
+      if (Type != global::GameMessageCore.TalentType.Unknown) {
         output.WriteRawTag(8);
         output.WriteEnum((int) Type);
       }
@@ -945,7 +946,7 @@ namespace GameMessageCore {
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public int CalculateSize() {
       int size = 0;
-      if (Type != global::GameMessageCore.TalentType.Unknow) {
+      if (Type != global::GameMessageCore.TalentType.Unknown) {
         size += 1 + pb::CodedOutputStream.ComputeEnumSize((int) Type);
       }
       size += unlockNodes_.CalculateSize(_repeated_unlockNodes_codec);
@@ -961,7 +962,7 @@ namespace GameMessageCore {
       if (other == null) {
         return;
       }
-      if (other.Type != global::GameMessageCore.TalentType.Unknow) {
+      if (other.Type != global::GameMessageCore.TalentType.Unknown) {
         Type = other.Type;
       }
       unlockNodes_.Add(other.unlockNodes_);

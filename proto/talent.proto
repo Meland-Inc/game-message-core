@@ -5,17 +5,17 @@ option go_package = "./messageGo/proto";
 
 // 天赋类型
 enum TalentType {
-    TalentTypeUnknow = 0;
+    TalentTypeUnknown = 0;
     Farming = 1;
     Battle = 2;
 }
 
-// 天赋模式
-enum TalentModeType{
+// 天赋收益
+enum TalentGainsType{
     //获得主动技能
-    Active = 0;
+    ActiveSkill = 0;
     // 获得被动技能
-    Passive = 1;
+    PassiveSkill = 1;
     // 获得合成配方
     Recipes = 2;
 } 
