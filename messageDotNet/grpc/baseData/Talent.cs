@@ -61,11 +61,9 @@ public class GrpcTalentTree
         GameMessageCore.TalentTree tree = new() { Type = TalentType };
         if (Nodes != null)
         {
-            int nodeLength = Nodes.Length;
-            tree.UnlockNodes = new GameMessageCore.TalentNode[nodeLength];
-            for (int i = 0; i < nodeLength; i++)
+            for (int i = 0; i < Nodes.Length; i++)
             {
-                tree.UnlockNodes[i] = Nodes[i];
+                tree.UnlockNodes.Add(Nodes[i].ToProtoData());
             }
         }
         return tree;
@@ -90,19 +88,17 @@ public class GrpcTalentData
         if (Levels != null)
         {
             int lvLength = Levels.Length;
-            data.LevelData = new GameMessageCore.TalentLevel[lvLength];
             for (int i = 0; i < lvLength; i++)
             {
-                data.LevelData[i] = Levels[i].ToProtoData();
+                data.LevelData.Add(Levels[i].ToProtoData());
             }
         }
         if (Trees != null)
         {
             int treeLength = Trees.Length;
-            data.Tree = new GameMessageCore.TalentTree[treeLength];
             for (int i = 0; i < treeLength; i++)
             {
-                data.Tree[i] = Trees[i].ToProtoData();
+                data.Tree.Add(Trees[i].ToProtoData());
             }
         }
         return data;
