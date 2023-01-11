@@ -30,13 +30,14 @@ namespace GameMessageCore {
             "ChxDb2xsZWN0UmVzb3VyY2VPcGVyYXRlUmVzdWx0EjoKCGJhc2VJbmZvGAEg",
             "ASgLMiguZ2FtZU1lc3NhZ2VDb3JlLkNvbGxlY3RSZXNvdXJjZUJhc2VJbmZv",
             "EhEKCWl0ZW1WYWxpZBgCIAEoCBIvCghkcm9wTGlzdBgDIAMoCzIdLmdhbWVN",
-            "ZXNzYWdlQ29yZS5JdGVtQmFzZUluZm8qkQEKCkhvbWVBY3Rpb24SEgoOSG9t",
+            "ZXNzYWdlQ29yZS5JdGVtQmFzZUluZm8qzQEKCkhvbWVBY3Rpb24SEgoOSG9t",
             "ZUFjdGlvbk5vbmUQABIUChBIb21lQWN0aW9uSG9laW5nEAISFAoQSG9tZUFj",
-            "dGlvblNvd2luZxAEEhYKEkhvbWVBY3Rpb25XYXRlcmluZxAIEhUKEUhvbWVB",
-            "Y3Rpb25IYXJ2ZXN0EBASFAoQSG9tZUFjdGlvbk1hbnVyZRAgKmQKE0NvbGxl",
-            "Y3RSZXNvdXJjZVR5cGUSHgoaQ29sbGVjdFJlc291cmNlVHlwZVVua25vd24Q",
-            "ABIbChdDb2xsZWN0UmVzb3VyY2VUeXBlU29pbBABEhAKDEhvbWVSZXNvdXJj",
-            "ZRACYgZwcm90bzM="));
+            "dGlvblNvd2luZxAEEhYKEkhvbWVBY3Rpb25XYXRlcmluZxAIEhQKEEhvbWVB",
+            "Y3Rpb25NYW51cmUQEBIVChFIb21lQWN0aW9uSGFydmVzdBAgEhEKDUhvbWVB",
+            "Y3Rpb25DdXQQQBIXChJIb21lQWN0aW9uRXhjYXZhdGUQgAESDgoJRXJhZGlj",
+            "YXRlEIACKmQKE0NvbGxlY3RSZXNvdXJjZVR5cGUSHgoaQ29sbGVjdFJlc291",
+            "cmNlVHlwZVVua25vd24QABIbChdDb2xsZWN0UmVzb3VyY2VUeXBlU29pbBAB",
+            "EhAKDEhvbWVSZXNvdXJjZRACYgZwcm90bzM="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::GameMessageCore.ItemReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(new[] {typeof(global::GameMessageCore.HomeAction), typeof(global::GameMessageCore.CollectResourceType), }, null, new pbr::GeneratedClrTypeInfo[] {
@@ -63,13 +64,25 @@ namespace GameMessageCore {
     /// </summary>
     [pbr::OriginalName("HomeActionWatering")] Watering = 8,
     /// <summary>
-    /// 收获
-    /// </summary>
-    [pbr::OriginalName("HomeActionHarvest")] Harvest = 16,
-    /// <summary>
     /// 施肥
     /// </summary>
-    [pbr::OriginalName("HomeActionManure")] Manure = 32,
+    [pbr::OriginalName("HomeActionManure")] Manure = 16,
+    /// <summary>
+    /// 收获收割
+    /// </summary>
+    [pbr::OriginalName("HomeActionHarvest")] Harvest = 32,
+    /// <summary>
+    /// 斧头砍树
+    /// </summary>
+    [pbr::OriginalName("HomeActionCut")] Cut = 64,
+    /// <summary>
+    /// 镐子挖矿
+    /// </summary>
+    [pbr::OriginalName("HomeActionExcavate")] Excavate = 128,
+    /// <summary>
+    /// 铲除植物
+    /// </summary>
+    [pbr::OriginalName("Eradicate")] Eradicate = 256,
   }
 
   public enum CollectResourceType {

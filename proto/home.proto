@@ -12,10 +12,16 @@ enum HomeAction {
       HomeActionSowing = 4;
       // 浇水
       HomeActionWatering = 8;
-      // 收获
-      HomeActionHarvest = 16;
       // 施肥
-      HomeActionManure = 32;
+      HomeActionManure = 16;
+      // 收获收割
+      HomeActionHarvest = 32;
+      // 斧头砍树
+      HomeActionCut = 64;
+      // 镐子挖矿
+      HomeActionExcavate = 128;
+      // 铲除植物
+      Eradicate = 256;
 }
 
 enum CollectResourceType
