@@ -28,7 +28,6 @@ public static class SubscriptionEvent
     /// </summary>
     public const string USER_CHANGE_SERVICE = "EventTopicUserChangeService";
 
-
     /// <summary>
     /// 存储玩家数据
     /// </summary>
@@ -96,6 +95,11 @@ public static class SubscriptionEvent
     /// home Granary Stockpile Event
     /// </summary>
     public const string GRANARY_STOCKPILE = "EventTopicGranaryStockpile";
+
+    /// <summary>
+    /// update user talent data event
+    /// </summary>
+    public const string UPDATE_TALENT = "EventTopicUpdateTalent";
 
 
 

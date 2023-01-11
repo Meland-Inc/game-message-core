@@ -87,6 +87,7 @@ public class GetUserDataOutput
     public GrpcVector3 Pos;
     public GrpcVector3 Dir;
     public GrpcPlayerAvatar[] Avatars;
+    public GrpcTalentData TalentData;
 
     public string ToJson()
     {
