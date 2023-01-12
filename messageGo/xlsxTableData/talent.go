@@ -19,7 +19,6 @@ type TalentTreeRow struct {
 	IsTrunk     bool      `json:"isTrunk"`
 	Layer       int32     `json:"layer"`
 	LvLimit     int32     `json:"lvLimit"`
-	Gains       int32     `json:"gains"` //TalentModeType
 	UpgradeJson string    `gorm:"type:text" json:"upgradeJson"`
 	CreatedAt   time.Time `json:"createdAt"` // 过期判断条件
 
