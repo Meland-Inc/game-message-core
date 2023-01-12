@@ -13,5 +13,6 @@ func TableModels() []interface{} {
 		SlotLvTableRow{},
 		TaskTableRow{},
 		TaskListTableRow{},
+		SceneAreaRow{},
 	}
 }

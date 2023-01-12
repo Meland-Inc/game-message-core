@@ -4,11 +4,11 @@ option go_package = "./messageGo/proto";
 
 // 服务定义
 
-enum ServiceStatus {
-  ServiceStatusUnknown = 0;
-  ServiceStatusUp = 1;
-  ServiceStatusDown = 2;
-}
+// enum ServiceStatus {
+//   ServiceStatusUnknown = 0;
+//   ServiceStatusUp = 1;
+//   ServiceStatusDown = 2;
+// }
 
 enum ServiceType{
   ServiceTypeUnknown = 0;
@@ -30,10 +30,9 @@ enum ServiceType{
   ServiceTypeLimit = 8;
 }
 
-message ServiceInfo {
-  ServiceType type = 1;
-  int32       service_id = 2;  
-  string      host = 3;   
-  string      port = 4;   
-  string      version = 5;
-}
+enum SceneServiceSubType{
+  UnknownSubType = 0;
+  World = 1;
+  Home = 2;
+  Dungeon = 3;
+} 

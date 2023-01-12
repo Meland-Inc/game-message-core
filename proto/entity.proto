@@ -32,6 +32,7 @@ message EntityWithLocation {
     Monster       monster = 11;
     NftBuild      build = 12;
     Npc           npc = 13;
+    Resource      resource = 14;
   }
 }
 
@@ -101,6 +102,14 @@ message NftBuild {
   int32           landPlacementPowerZeroCooldownStartAt = 15;
   // 电量不足时建造保护期
   int32           landPlacementPowerZeroCooldownAt = 16;
+}
+
+message Resource {
+  int32         cid = 1; 
+  int64         id = 2;
+  bool          active = 3;
+  Vector3       position = 5;
+  Vector3       dir = 6;    // 方向（朝向）
 }
 
 /// ************************* move info ***************************************************

@@ -7,9 +7,9 @@ using UnityEngine;
 [Serializable]
 public class ManagerActionSelectServiceInput
 {
-    // 消息版本号 值为毫秒时间戳
-    public long MsgVersion;
     public GameMessageCore.ServiceType ServiceType;
+    public GameMessageCore.SceneServiceSubType SceneSerSubType;
+    public long OwnerId;
     public int MapId;
     public string ToJson()
     {
@@ -26,15 +26,7 @@ public class ManagerActionSelectServiceOutput
 {
     public int ErrorCode;
     public string ErrorMessage;
-    public GameMessageCore.ServiceType ServiceType;
-    public string ServiceAppId;
-    public int MapId;
-    public string Host;
-    public int Port;
-    public int Online;
-    public int MaxOnline;
-    public long CreateAt;
-    public long UpdateAt;
+    public ServiceData Service;
 
     public string ToJson()
     {
@@ -49,9 +41,9 @@ public class ManagerActionSelectServiceOutput
 [Serializable]
 public class MultiSelectServiceInput
 {
-    // 消息版本号 值为毫秒时间戳
-    public long MsgVersion;
     public GameMessageCore.ServiceType ServiceType;
+    public GameMessageCore.SceneServiceSubType SceneSerSubType;
+    public long OwnerId;
     public int MapId;
     public string ToJson()
     {

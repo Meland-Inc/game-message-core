@@ -13,9 +13,10 @@ enum EntityType {
   EntityTypeNftBuild = 3;
   // npc
   EntityTypeNpc = 4;
-
+  // 资源
+  EntityTypeResource = 5;
   // 公共类型最大值  
-  EntityTypeMax = 5;
+  EntityTypeMax = 6;
   // 客户端专用，主角
   MainPlayer = 999; 
 }

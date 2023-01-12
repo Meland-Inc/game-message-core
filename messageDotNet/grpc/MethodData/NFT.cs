@@ -19,10 +19,9 @@ public class TakeNftData
 [Serializable]
 public class MainServiceActionTakeNftInput
 {
-    // 消息版本号 值为毫秒时间戳
-    public long MsgVersion;
-    public int UserId;
+    public long UserId;
     public TakeNftData[] TakeNfts;
+
     public string ToJson()
     {
         return JsonUtility.ToJson(this);
@@ -30,6 +29,31 @@ public class MainServiceActionTakeNftInput
 }
 [Serializable]
 public class MainServiceActionTakeNftOutput
+{
+    public bool Success;
+    public string FailedMsg;
+
+    public string ToJson()
+    {
+        return JsonUtility.ToJson(this);
+    }
+}
+
+/// <summary>
+/// dapr call mainService mint User nft input
+/// </summary>
+[Serializable]
+public class MainServiceActionMintNftInput
+{
+    public long UserId;
+    public GrpcItemBaseInfo Item;
+    public string ToJson()
+    {
+        return JsonUtility.ToJson(this);
+    }
+}
+[Serializable]
+public class MainServiceActionMintNftOutput
 {
     public bool Success;
     public string FailedMsg;

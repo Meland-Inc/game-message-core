@@ -7,6 +7,8 @@ public class ServiceData
 {
     public string APPID;
     public GameMessageCore.ServiceType ServiceType;
+    public GameMessageCore.SceneServiceSubType SceneSerSubType;
+    public long Owner;
     public string Host;
     public int Port;
     public int MapId;

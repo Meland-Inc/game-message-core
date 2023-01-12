@@ -15,6 +15,8 @@ import "task.proto";
 import "chat.proto";
 import "vector.proto";
 import "land.proto";
+import "service.proto";
+import "home.proto";
 
 
 
@@ -77,6 +79,15 @@ message Envelope {
     BroadCastSelfBuildRecyclingResponse broad_cast_self_build_recycling_response = 0x010047; 
     MintBatteryRequest                mint_battery_request                  = 0x010049;
     MintBatteryResponse               mint_battery_response                 = 0x010050;
+    QueryGranaryRequest               query_granary_request                 = 0x010051;
+    QueryGranaryResponse              query_granary_response                = 0x010052;
+    GranaryCollectRequest             granary_collect_request               = 0x010053;
+    GranaryCollectResponse            granary_collect_response              = 0x010054;
+    BroadCastGranaryUpdateResponse    broad_cast_granary_update_response    = 0x010055;
+    BroadCastUpGranaryItemResponse    broad_cast_up_granary_item_response   = 0x010057;
+
+
+
 
     //accountSer协议 : 0x02ZZZZ  账号服务 协议 ************************************
     QueryPlayerRequest                query_player_request                  = 0x020001;
@@ -113,13 +124,17 @@ message Envelope {
     SceneDestructionRequest                 scene_destruction_request                     = 0x030033;                                
     SceneDestructionResponse                scene_destruction_response                    = 0x030034;
     BroadCastSceneDestructionResponse       broad_cast_scene_destruction_response         = 0x030035;
-    PlayerActionChatRequest              player_action_chat_request                = 0x030037;
-    PlayerActionChatResponse             player_action_chat_response               = 0x030039;    
-    BroadCastPlayerActionChatResponse    broad_cast_player_action_chat_response    = 0x030041;  
+    PlayerActionChatRequest                 player_action_chat_request                    = 0x030037;
+    PlayerActionChatResponse                player_action_chat_response                   = 0x030038;    
+    BroadCastPlayerActionChatResponse       broad_cast_player_action_chat_response        = 0x030039;
+    GetHomeDataRequest                      get_home_data_request                         = 0x030041; 
+    GetHomeDataResponse                     get_home_data_response                        = 0x030042; 
 
     QueryServerTimeRequest                  query_Server_time_request                     = 0x030043;
     QueryServerTimeResponse                 query_Server_time_response                    = 0x030044;
-
+    BroadCastChangeServiceResponse          broad_cast_change_service_response            = 0x030045;
+    HomeResourceOperateRequest              home_resource_operate_request                 = 0x030047;
+    HomeResourceOperateResponse             home_resource_operate_response                = 0x030048;
 
 
     //taskServer协议 : 0x04ZZZZ  任务服务 协议 ************************************
@@ -338,8 +353,20 @@ message MintBatteryRequest{
 }
 message MintBatteryResponse{ }
 
-
-
+message QueryGranaryRequest{}
+message QueryGranaryResponse{
+  repeated ItemBaseInfo items = 1;
+}
+message GranaryCollectRequest{}
+message GranaryCollectResponse{
+  repeated ItemBaseInfo items = 1;
+}
+message BroadCastGranaryUpdateResponse{
+  repeated ItemBaseInfo items = 1;
+}
+message BroadCastUpGranaryItemResponse{
+  ItemBaseInfo    items = 1;
+}
 
 
 //accountSer协议 : 0x02ZZZZ  账号服务 协议 ************************************
@@ -389,8 +416,8 @@ message UseSkillRequest {
   EntityLocation  from_location = 3;
   // 技能指定使用的目标
   EntityId        target_id = 4;
-  // 连击动作
-  int32           combo_index = 5;
+  //是技能开始还是停止 有些持续需要手动停止
+  bool is_start = 5;
 }
 message UseSkillResponse {
 } 
@@ -427,6 +454,14 @@ message PlayerActionChatResponse {
 message BroadCastPlayerActionChatResponse {
   int64          user_id = 1;
   bool           show = 2;
+}
+message GetHomeDataRequest {
+  int64         req_data_user_id = 1;
+}
+message GetHomeDataResponse{
+  int64         owner_user_id = 1;
+  string        owner_name = 2;
+  string        home_save_data = 3;
 }
 
 message BroadCastInitMapElementResponse {
@@ -520,11 +555,25 @@ message QueryServerTimeResponse {
   int64     client_time = 1;
   int64     system_time = 2;
 }
-
-
-
-
-
+message BroadCastChangeServiceResponse{
+  ServiceType         serType    = 1;
+  SceneServiceSubType serSubType = 2;
+  int64               serOwner   = 3;  
+}
+message HomeResourceOperateRequest
+{
+  repeated CollectResourceBaseInfo resourceList = 1;
+  HomeAction   action = 2;
+  //可能是种子cid 也可能是装备cid
+  int32 toolCid = 3;
+}
+message HomeResourceOperateResponse
+{
+  repeated CollectResourceOperateResult operateResultList = 1;
+  HomeAction   action = 2;
+  //可能是种子cid 也可能是装备cid
+  int32 toolCid = 3;
+}
 
 //taskServer协议 : 0x04ZZZZ  任务服务 协议 ************************************
 

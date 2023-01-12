@@ -59,6 +59,12 @@ enum EnvelopeType {
     BroadCastSelfBuildUpdate        = 0x010045;     // 广播更新建造物数据,只广播给owner
     BroadCastSelfBuildRecycling     = 0x010047;     // 广播移除ui界面中的建筑物,只广播给owner
     MintBattery                     = 0x010049;     // 使用token 购买电池(透传给 theweb3)
+    QueryGranary                    = 0x010051;     // 查询仓库所有道具
+    GranaryCollect                  = 0x010053;     // 取出仓库中的所有道具
+    BroadCastGranaryUpdate          = 0x010055;     // 全量更新仓库数据
+    BroadCastUpGranaryItem          = 0x010057;     // 更新仓库道具
+
+
 
 
     //accountSer协议 : 0x02ZZZZ  账号服务 协议 ************************************
@@ -86,11 +92,12 @@ enum EnvelopeType {
     BroadCastPlayerActionCollect    = 0x030029;
     SceneDestruction                = 0x030033;
     BroadCastSceneDestruction       = 0x030035;
-    PlayerActionChat                   = 0x030037;
-    BroadCastPlayerActionChat          = 0x030039;
-
-
+    PlayerActionChat                = 0x030037;
+    BroadCastPlayerActionChat       = 0x030039;
+    GetHomeData                     = 0x030041;
     QueryServerTime                 = 0x030043;       // 客户端请求服务器时间
+    BroadCastChangeService          = 0x030045;
+    HomeResourceOperate             = 0x030047;
 
 
     //taskServer协议 : 0x04ZZZZ  任务服务 协议 ************************************
